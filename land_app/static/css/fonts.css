@@ -1,0 +1,15 @@
+@font-face {font-family: Proxima_Nova_Regular;
+ src: url(../assets/fonts/Proxima_Nova_Regular.otf);
+}
+@font-face {font-family: Proxima_Nova_Semibold;
+ src: url(../assets/fonts/Proxima_Nova_Semibold.otf);
+}
+@font-face {font-family: Proxima_Nova_Condensed_Semibold;
+ src: url(../assets/fonts/Proxima_Nova_Condensed_Semibold.otf);
+}
+@font-face {font-family: Proxima_Nova_Light;
+ src: url(../assets/fonts/Proxima_Nova_Light.otf);
+}
+@font-face {font-family: Bender-Black;
+ src: url(../assets/fonts/Bender-Black.otf);
+}
