@@ -32,6 +32,7 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
 
     <!-- JS lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
 
 </head>
 <body>
@@ -121,6 +122,7 @@
                 <div class="header-btn-wrapper">
                     <div class="header-btn">
                         <p>Получить прайс</p>
+                        <img src="{% static 'assets/pictures/svg/excel.svg' %}" class="header-btn-icon">
                     </div>
                     <p class="header-btn-text">В виде Exel документа (вес)</p>
                 </div>
@@ -332,17 +334,22 @@
         <form class="form" action="" method="get">
 
             <div class="field-wrapper">
-                <label for="name_field" class="filed-label">
-                    <img src="{% static 'assets/pictures/png' %}" class="field-icon"/>
-                </label>
-                <input type="text" class="field" id="name_field" name="user-name" placeholder="Введите Ваше имя"/>
+                <div class="field__container">
+                    <label for="name_field" class="filed-label">
+                        <img src="{% static 'assets/pictures/svg/man-user.svg' %}" class="field-icon"/>
+                    </label>
+                    <input type="text" class="field" id="name_field" name="user-name" placeholder="Введите Ваше имя"/>
+                </div>
             </div>
 
             <div class="field-wrapper">
-                <label for="number_field" class="filed-label">
-                    <img src="{% static 'assets/pictures/png' %}" class="field-icon"/>
-                </label>
-                <input type="tel" class="field" id="number_field" name="user-number" placeholder="Введите Ваш номер"/>
+                <div class="field__container">
+                    <label for="number_field" class="filed-label">
+                        <img src="{% static 'assets/pictures/svg/call-answer.svg' %}" class="field-icon"/>
+                    </label>
+                    <input type="tel" class="field" id="number_field" name="user-number"
+                           placeholder="Введите Ваш номер"/>
+                </div>
             </div>
 
             <div class="field-wrapper">
@@ -357,7 +364,11 @@
 <div class="container">
     <main class="main-wrapper">
 
-        <h2 class="main-caption"></h2>
+        <div class="flex-wrapper">
+            <div class="main__captions">
+                <h2 class="main-caption">Наши услуги</h2>
+            </div>
+        </div>
 
         <section class="carousel__container">
 
@@ -365,7 +376,8 @@
 
             <!-- First item -->
             <div class="carousel__item" @click="switchView('square')">
-                <h3 class="carousel-caption"></h3>
+                <h3 class="carousel-caption">Капитальный
+                    <br>ремонт ДВС</h3>
                 <div class="carousel-btn__container">
                     <img src="" class="carousel-btn-img"/>
                     <img src="" class="carousel-btn-wrapper"/>
@@ -379,7 +391,8 @@
                     <img src="" class="carousel-btn-img"/>
                     <img src="" class="carousel-btn-wrapper"/>
                 </div>
-                <h3 class="carousel-caption"></h3>
+                <h3 class="carousel-caption">Диагностика
+                    <br>двигателя</h3>
             </div>
             <!-- end second item -->
 
@@ -389,7 +402,7 @@
                     <img src="" class="carousel-btn-img"/>
                     <img src="" class="carousel-btn-wrapper"/>
                 </div>
-                <h3 class="carousel-caption"></h3>
+                <h3 class="carousel-caption">Чип тюнинг</h3>
             </div>
             <!-- end third item -->
 
@@ -399,7 +412,8 @@
                     <img src="" class="carousel-btn-img"/>
                     <img src="" class="carousel-btn-wrapper"/>
                 </div>
-                <h3 class="carousel-caption"></h3>
+                <h3 class="carousel-caption">Диагностика топливной
+                    <br>аппаратуры</h3>
             </div>
             <!-- end fourth item -->
 
@@ -409,13 +423,14 @@
                     <img src="" class="carousel-btn-img"/>
                     <img src="" class="carousel-btn-wrapper"/>
                 </div>
-                <h3 class="carousel-caption"></h3>
+                <h3 class="carousel-caption">Ремонт ходовой
+                    <br>подвески</h3>
             </div>
             <!-- end fifth item -->
 
             <!-- Sixth item -->
             <div class="carousel__item" @click="switchView('square')">
-                <h3 class="carousel-caption"></h3>
+                <h3 class="carousel-caption">ТО и замена масла</h3>
                 <div class="carousel-btn__container">
                     <img src="" class="carousel-btn-img"/>
                     <img src="" class="carousel-btn-wrapper"/>
@@ -425,7 +440,8 @@
 
             <!-- Seventh item -->
             <div class="carousel__item" @click="switchView('square')">
-                <h3 class="carousel-caption"></h3>
+                <h3 class="carousel-caption">Ремонт тормозной
+                    <br>и рулевой системы</h3>
                 <div class="carousel-btn__container">
                     <img src="" class="carousel-btn-img"/>
                     <img src="" class="carousel-btn-wrapper"/>
@@ -435,7 +451,8 @@
 
             <!-- Eighth item -->
             <div class="carousel__item" @click="switchView('square')">
-                <h3 class="carousel-caption"></h3>
+                <h3 class="carousel-caption">Ремонт КПП
+                    <br>и редуктора</h3>
                 <div class="carousel-btn__container">
                     <img src="" class="carousel-btn-img"/>
                     <img src="" class="carousel-btn-wrapper"/>
@@ -445,7 +462,7 @@
 
             <!-- Ninth item -->
             <div class="carousel__item" @click="switchView('square')">
-                <h3 class="carousel-caption"></h3>
+                <h3 class="carousel-caption">Автоэлектрика</h3>
                 <div class="carousel-btn__container">
                     <img src="" class="carousel-btn-img"/>
                     <img src="" class="carousel-btn-wrapper"/>

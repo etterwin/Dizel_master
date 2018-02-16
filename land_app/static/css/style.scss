@@ -43,6 +43,10 @@ body {
   background: white;
 }
 
+h1, h2, h3, h4 {
+  cursor: default;
+}
+
 /*header*/
 .header {
   padding: 10px;
@@ -124,7 +128,8 @@ body {
 .header-img {
   position: absolute;
   top: 50px;
-  right: 30px;
+  right: 50px;
+  width: 430px;
 }
 
 .header-caption {
@@ -266,19 +271,49 @@ body {
 
 .header-btn-wrapper {
   width: 250px;
+  cursor: pointer;
+  position: relative;
   &:first-child {
     margin: 0 35px 0 auto;
+    &:before {
+      content: '';
+      width: 300px;
+      height: 70px;
+      position: absolute;
+      top: -15px;
+      left: -25px;
+      background: url("../assets/pictures/svg/shadow.svg") no-repeat 50% 50%;
+      background-size: 110%;
+    }
   }
   &:last-child {
     margin: 0 auto 0 0;
+    &:before {
+      content: '';
+      width: 300px;
+      height: 70px;
+      position: absolute;
+      top: -15px;
+      left: -25px;
+      background: url("../assets/pictures/svg/shadow.svg") no-repeat 50% 50%;
+      background-size: 110%;
+    }
   }
   &:first-child .header-btn {
-    background: url("../assets/pictures/png/") no-repeat 50% 50%;
+    background: url("../assets/pictures/svg/red.svg") no-repeat 50% 50%;
     background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
   }
   &:last-child .header-btn {
-    background: url("../assets/pictures/png/") no-repeat 50% 50%;
+    background: url("../assets/pictures/svg/green.svg") no-repeat 50% 50%;
     background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
   }
   &:first-child .header-btn,
   &:last-child .header-btn {
@@ -289,12 +324,13 @@ body {
   &:first-child .header-btn p,
   &:last-child .header-btn p {
     color: white;
+    cursor: pointer;
     margin: auto;
     font-family: 'Bender Black', sans-serif;
     font-size: 22px;
   }
   &:first-child .header-btn-text {
-    margin: 5px auto 0;
+    margin: 50px auto 0;
     color: white;
     font-family: 'Proxima Nova Light', sans-serif;
     font-size: 14px;
@@ -303,7 +339,7 @@ body {
     text-align: center;
   }
   &:last-child .header-btn-text {
-    margin: 5px auto 0;
+    margin: 50px auto 0;
     color: white;
     font-family: 'Proxima Nova Light', sans-serif;
     font-size: 14px;
@@ -314,6 +350,12 @@ body {
   }
 }
 
+.header-btn-icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  cursor: pointer;
+}
 /*end header*/
 
 /*base*/
@@ -380,6 +422,173 @@ body .container {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  &:nth-child(3) {
+    height: 420px;
+    padding: 10px;
+    background: url("../assets/pictures/png/man.png") no-repeat 80% 50%,
+                url("../assets/pictures/png/bg.png") no-repeat 50% 50%;
+    background-size:  1000px 900px, cover;
+  }
+  &:nth-child(3) .main-caption {
+    cursor: default;
+    &:first-child {
+      font-family: 'Bender Black', sans-serif;
+      color: white;
+      line-height: 1;
+      font-size:48px;
+    }
+    &:nth-child(2) {
+      margin: 8px 0 20px;
+      font-family: "Proxima Nova Regular", sans-serif;
+      color: white;
+      font-size: 16px;
+    }
+  }
+  &:nth-child(3) form .field-wrapper {
+    width: 290px;
+    height: 60px;
+    margin-bottom: 18px;
+    &:first-child,
+    &:nth-child(2) {
+      position: relative;
+      &:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: -5px;
+        left: -40px;
+        width: 370px;
+        height: 80px;
+        background: url("../assets/pictures/svg/shadow.svg") no-repeat 50% 50%;
+        background-size: cover;
+      }
+      &:after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 290px;
+        height: 60px;
+        background: url("../assets/pictures/svg/input.svg") no-repeat 50% 50%;
+        background-size: cover;
+      }
+    }
+    &:first-child .field__container,
+    &:nth-child(2) .field__container {
+      position: absolute;
+      width: 290px;
+      height: 60px;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &:first-child .filed-label,
+    &:nth-child(2) .filed-label {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 15px 0;
+    }
+    &:first-child .filed-label .field-icon,
+    &:nth-child(2) .filed-label .field-icon {
+      width: 20px;
+      height: 20px;
+      margin: auto;
+    }
+    &:first-child .field,
+    &:nth-child(2) .field {
+      background: transparent;
+      border: none;
+      outline: none;
+      margin: 0 auto 0 0;
+      width: 220px;
+      font-family: "Proxima Nova Semibold", sans-serif;
+      font-size: 16px;
+    }
+    &:last-child {
+      position: relative;
+      &:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: -5px;
+        left: -40px;
+        width: 370px;
+        height: 80px;
+        background: url("../assets/pictures/svg/shadow.svg") no-repeat 50% 50%;
+        background-size: cover;
+      }
+      &:after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 290px;
+        height: 60px;
+        background: url("../assets/pictures/svg/red.svg") no-repeat 50% 50%;
+        background-size: cover;
+      }
+    }
+    &:last-child .field-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      outline: none;
+      background: none;
+      border: none;
+      width: 290px;
+      height: 60px;
+      color: white;
+      font-family: "Bender Black", sans-serif;
+      font-size: 22pt;
+    }
+  }
+  &:nth-child(4) {
+    padding: 30px;
+  }
+  &:nth-child(4) .flex-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  &:nth-child(4) .main__captions {
+    display: inline-block;
+    font-family: 'Bender Black', sans-serif;
+    font-size: 38px;
+    line-height: 0.85;
+    letter-spacing: 2.25px;
+    color: #252525;
+    text-align: center;
+    margin: auto auto 10px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -60px;
+      width: 48px;
+      height: 48px;
+      background: url("../assets/pictures/svg/tools.svg") no-repeat 50% 50%;
+      background-size: cover;
+      transform: scale(-1, 1);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -60px;
+      width: 48px;
+      height: 48px;
+      background: url("../assets/pictures/svg/tools.svg") no-repeat 50% 50%;
+      background-size: cover;
+    }
   }
 }
 
