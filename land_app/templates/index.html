@@ -26,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Диагностика и ремонт, Дизель–МАСТЕР</title>
-    <link href="" rel="shortcut icon"/>
+    <link href="{% static 'assets/pictures/png/section__caption-1.png' %}" rel="shortcut icon"/>
 
     <!-- CSS -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
@@ -70,40 +70,44 @@
                 <br>от ведущих специалистов Поволжья</h4>
             <h3 class="header-caption">Наша специализация МАРКА АВТО</h3>
 
-            <div class="header__box">
+            <section class="header-wrapper">
+
+                <div class="header__box">
                 <div class="header-box__container">
                     <div class="header-box-wrapper">
                         <div class="header-box-caption">
                             <p>Марки авто</p>
                         </div>
-                        <img src="{% static 'assets/pictures/png' %}" class="header-box-icon"/>
+                        <img src="{% static 'assets/pictures/png/icon-1.png' %}" class="header-box-icon"/>
                     </div>
                 </div>
                 <span class="header-box-text">Более 11 марок и 25 моделей</span>
             </div>
 
-            <div class="header__box">
-                <div class="header-box__container">
-                    <div class="header-box-wrapper">
-                        <div class="header-box-caption">
-                            <p>Двигатели</p>
+                <div class="header__box">
+                    <div class="header-box__container">
+                        <div class="header-box-wrapper">
+                            <div class="header-box-caption">
+                                <p>Двигатели</p>
+                            </div>
+                            <img src="{% static 'assets/pictures/png/icon-2.png' %}" class="header-box-icon"/>
                         </div>
-                        <img src="{% static 'assets/pictures/png' %}" class="header-box-icon"/>
                     </div>
+                    <span class="header-box-text">Более 30 моделей</span>
                 </div>
-                <span class="header-box-text">Более 30 моделей</span>
-            </div>
 
-            <div class="header__box">
+                <div class="header__box">
                 <div class="header-box__container">
                     <div class="header-box-wrapper">
                         <div class="header-box-caption">
                             <p>Контакты</p>
                         </div>
-                        <img src="{% static 'assets/pictures/png' %}" class="header-box-icon"/>
+                        <img src="{% static 'assets/pictures/png/icon-3.png' %}" class="header-box-icon"/>
                     </div>
                 </div>
             </div>
+
+            </section>
 
             <footer class="header__btn">
 
@@ -133,39 +137,43 @@
 <div class="container">
     <main class="main-wrapper">
 
-        <h2 class="main-caption"></h2>
-        <h4 class="main-caption"></h4>
+        <div class="flex-wrapper">
+            <div class="main__captions">
+                <h2 class="main-caption">Авто, которые мы обслуживаем</h2>
+                <h4 class="main-caption">Кликните на машину и выберите свою модель</h4>
+            </div>
+        </div>
 
         <div class="main__container">
 
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
-                <h3 class="car-caption"></h3>
+                <h3 class="car-caption">Валдай</h3>
             </article>
 
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
-                <h3 class="car-caption"></h3>
+                <h3 class="car-caption">Камаз</h3>
             </article>
 
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
-                <h3 class="car-caption"></h3>
+                <h3 class="car-caption">Mersedes</h3>
             </article>
 
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
-                <h3 class="car-caption"></h3>
+                <h3 class="car-caption">ГАЗон</h3>
             </article>
 
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
-                <h3 class="car-caption"></h3>
+                <h3 class="car-caption">МАЗ</h3>
             </article>
 
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
-                <h3 class="car-caption"></h3>
+                <h3 class="car-caption">Foton</h3>
             </article>
 
         </div>
@@ -176,8 +184,12 @@
 <div class="container">
     <main class="main-wrapper">
 
-        <h2 class="main-caption"></h2>
-        <h4 class="main-caption"></h4>
+        <h2 class="main-caption">Записаться
+            <br>на диагностику
+        </h2>
+        <h4 class="main-caption">Получить консультацию у ведущего
+            <br>специалиста Поволжья
+        </h4>
 
         <form class="form" action="" method="get">
 
