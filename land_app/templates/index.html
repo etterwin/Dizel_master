@@ -1,33 +1,35 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 
     <meta charset="UTF-8">
-    <meta property="og:url" content="img/" />
-    <meta property="og:image" content="img/" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <link rel="image_src" href="" />
+    <meta property="og:url" content="img/"/>
+    <meta property="og:image" content="img/"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <link rel="image_src" href=""/>
 
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#383838" />
+    <meta name="theme-color" content="#383838"/>
 
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#383838" />
+    <meta name="msapplication-navbutton-color" content="#383838"/>
 
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent"/>
 
     <!-- Яндекс.Браузер -->
-    <meta name="viewport" content="ya-title=#383838,ya-dock=fade" />
+    <meta name="viewport" content="ya-title=#383838,ya-dock=fade"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Диагностика и ремонт, Дизель–МАСТЕР</title>
-    <link href="" rel="shortcut icon" />
+    <link href="" rel="shortcut icon"/>
 
     <!-- CSS -->
-    <link href="{% static 'css/style.css'%}" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
 
     <!-- JS lib -->
 
@@ -40,16 +42,21 @@
         <nav class="nav">
             <ul class="header-list">
                 <li class="header-item">
-                    <img src="{% static 'assets/' %}" class="header-item-img" />
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'assets/pictures/svg/Logo-white.svg' %}" class="header-item-img"/>
+                    </a>
                     <ul class="sub-list">
-                        <li class="sub-item"></li>
-                        <li class="sub-item"></li>
+                        <li class="sub-item">Дизель — <strong>МАСТЕР</strong></li>
+                        <li class="sub-item">Ремонт и обслуживание
+                            <br>в Нижнем Новгороде
+                        </li>
                     </ul>
                 </li>
                 <li class="header-item">
                     <ul class="sub-list">
-                        <li class="sub-item"></li>
-                        <li class="sub-item"></li>
+                        <li class="sub-item">8 910 395 25 55</li>
+                        <li class="sub-item">
+                            <p>Схема проезда</p></li>
                     </ul>
                 </li>
             </ul>
@@ -57,53 +64,66 @@
 
         <section class="header__container">
 
-            <h1 class="header-caption"></h1>
-            <h4 class="header-caption"></h4>
-            <h3 class="header-caption"></h3>
+            <h1 class="header-caption">Диагностика и ремонт
+                <br>дизельного двигателя</h1>
+            <h4 class="header-caption">на диллерском оборудовании
+                <br>от ведущих специалистов Поволжья</h4>
+            <h3 class="header-caption">Наша специализация МАРКА АВТО</h3>
 
             <div class="header__box">
                 <div class="header-box__container">
                     <div class="header-box-wrapper">
-                        <div class="header-box-caption"></div>
-                        <img src="{% static 'assets/pictures/png' %}" class="header-box-icon" />
+                        <div class="header-box-caption">
+                            <p>Марки авто</p>
+                        </div>
+                        <img src="{% static 'assets/pictures/png' %}" class="header-box-icon"/>
                     </div>
                 </div>
-                <span class="header-box-text"></span>
+                <span class="header-box-text">Более 11 марок и 25 моделей</span>
             </div>
 
             <div class="header__box">
                 <div class="header-box__container">
                     <div class="header-box-wrapper">
-                        <div class="header-box-caption"></div>
-                        <img src="{% static 'assets/pictures/png' %}" class="header-box-icon" />
+                        <div class="header-box-caption">
+                            <p>Двигатели</p>
+                        </div>
+                        <img src="{% static 'assets/pictures/png' %}" class="header-box-icon"/>
                     </div>
                 </div>
-                <span class="header-box-text"></span>
+                <span class="header-box-text">Более 30 моделей</span>
             </div>
 
             <div class="header__box">
                 <div class="header-box__container">
                     <div class="header-box-wrapper">
-                        <div class="header-box-caption"></div>
-                        <img src="{% static 'assets/pictures/png' %}" class="header-box-icon" />
+                        <div class="header-box-caption">
+                            <p>Контакты</p>
+                        </div>
+                        <img src="{% static 'assets/pictures/png' %}" class="header-box-icon"/>
                     </div>
                 </div>
-                <span class="header-box-text"></span>
             </div>
 
             <footer class="header__btn">
 
                 <div class="header-btn-wrapper">
-                    <div class="header-btn"></div>
-                    <p class="header-btn-text"></p>
+                    <div class="header-btn">
+                        <p>Записаться</p>
+                    </div>
+                    <p class="header-btn-text">Получить <strong>бесплатную</strong> консультацию</p>
                 </div>
 
                 <div class="header-btn-wrapper">
-                    <div class="header-btn"></div>
-                    <p class="header-btn-text"></p>
+                    <div class="header-btn">
+                        <p>Получить прайс</p>
+                    </div>
+                    <p class="header-btn-text">В виде Exel документа (вес)</p>
                 </div>
 
             </footer>
+
+            <img src="{% static 'assets/pictures/png/header-img.png' %}" class="header-img" />
 
         </section>
 
@@ -113,40 +133,38 @@
 <div class="container">
     <main class="main-wrapper">
 
-        <div class="main-caption__container">
-            <h2 class="main-caption"></h2>
-            <h4 class="main-caption"></h4>
-        </div>
+        <h2 class="main-caption"></h2>
+        <h4 class="main-caption"></h4>
 
         <div class="main__container">
 
             <article class="car__container">
-                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img" />
+                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption"></h3>
             </article>
 
             <article class="car__container">
-                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img" />
+                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption"></h3>
             </article>
 
             <article class="car__container">
-                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img" />
+                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption"></h3>
             </article>
 
             <article class="car__container">
-                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img" />
+                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption"></h3>
             </article>
 
             <article class="car__container">
-                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img" />
+                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption"></h3>
             </article>
 
             <article class="car__container">
-                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img" />
+                <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption"></h3>
             </article>
 
@@ -165,16 +183,16 @@
 
             <div class="field-wrapper">
                 <label for="name_field" class="filed-label">
-                    <img src="{% static 'assets/pictures/png' %}" class="field-icon" />
+                    <img src="{% static 'assets/pictures/png' %}" class="field-icon"/>
                 </label>
-                <input type="text" class="field" id="name_field" name="user-name" />
+                <input type="text" class="field" id="name_field" name="user-name" placeholder="Введите Ваше имя"/>
             </div>
 
             <div class="field-wrapper">
                 <label for="number_field" class="filed-label">
-                    <img src="{% static 'assets/pictures/png' %}" class="field-icon" />
+                    <img src="{% static 'assets/pictures/png' %}" class="field-icon"/>
                 </label>
-                <input type="tel" class="field" id="number_field" name="user-number" />
+                <input type="tel" class="field" id="number_field" name="user-number" placeholder="Введите Ваш номер"/>
             </div>
 
             <div class="field-wrapper">
@@ -185,6 +203,315 @@
 
     </main>
 </div>
+
+<div class="container">
+    <main class="main-wrapper">
+
+        <h2 class="main-caption"></h2>
+
+        <section class="carousel__container">
+
+            <!-- Карусель сверстана по часовой стрелке, начиная с самого верхнего элемента -->
+
+            <!-- First item -->
+            <div class="carousel__item" @click="switchView('square')">
+                <h3 class="carousel-caption"></h3>
+                <div class="carousel-btn__container">
+                    <img src="" class="carousel-btn-img"/>
+                    <img src="" class="carousel-btn-wrapper"/>
+                </div>
+            </div>
+            <!-- end first item -->
+
+            <!-- Second item -->
+            <div class="carousel__item" @click="switchView('square')">
+                <div class="carousel-btn__container">
+                    <img src="" class="carousel-btn-img"/>
+                    <img src="" class="carousel-btn-wrapper"/>
+                </div>
+                <h3 class="carousel-caption"></h3>
+            </div>
+            <!-- end second item -->
+
+            <!-- Third item -->
+            <div class="carousel__item" @click="switchView('square')">
+                <div class="carousel-btn__container">
+                    <img src="" class="carousel-btn-img"/>
+                    <img src="" class="carousel-btn-wrapper"/>
+                </div>
+                <h3 class="carousel-caption"></h3>
+            </div>
+            <!-- end third item -->
+
+            <!-- Fourth item -->
+            <div class="carousel__item" @click="switchView('square')">
+                <div class="carousel-btn__container">
+                    <img src="" class="carousel-btn-img"/>
+                    <img src="" class="carousel-btn-wrapper"/>
+                </div>
+                <h3 class="carousel-caption"></h3>
+            </div>
+            <!-- end fourth item -->
+
+            <!-- Fifth item -->
+            <div class="carousel__item" @click="switchView('square')">
+                <div class="carousel-btn__container">
+                    <img src="" class="carousel-btn-img"/>
+                    <img src="" class="carousel-btn-wrapper"/>
+                </div>
+                <h3 class="carousel-caption"></h3>
+            </div>
+            <!-- end fifth item -->
+
+            <!-- Sixth item -->
+            <div class="carousel__item" @click="switchView('square')">
+                <h3 class="carousel-caption"></h3>
+                <div class="carousel-btn__container">
+                    <img src="" class="carousel-btn-img"/>
+                    <img src="" class="carousel-btn-wrapper"/>
+                </div>
+            </div>
+            <!-- end sixth item -->
+
+            <!-- Seventh item -->
+            <div class="carousel__item" @click="switchView('square')">
+                <h3 class="carousel-caption"></h3>
+                <div class="carousel-btn__container">
+                    <img src="" class="carousel-btn-img"/>
+                    <img src="" class="carousel-btn-wrapper"/>
+                </div>
+            </div>
+            <!-- end seventh item -->
+
+            <!-- Eighth item -->
+            <div class="carousel__item" @click="switchView('square')">
+                <h3 class="carousel-caption"></h3>
+                <div class="carousel-btn__container">
+                    <img src="" class="carousel-btn-img"/>
+                    <img src="" class="carousel-btn-wrapper"/>
+                </div>
+            </div>
+            <!-- end eighth item -->
+
+            <!-- Ninth item -->
+            <div class="carousel__item" @click="switchView('square')">
+                <h3 class="carousel-caption"></h3>
+                <div class="carousel-btn__container">
+                    <img src="" class="carousel-btn-img"/>
+                    <img src="" class="carousel-btn-wrapper"/>
+                </div>
+            </div>
+            <!-- end ninth item -->
+
+            <!-- Main item -->
+            <div class="carousel-item">
+                <transition name="switch">
+                    <component :is="currentVuew"></component>
+                </transition>
+            </div>
+            <!-- end main item -->
+
+
+            <!-- Vue templates -->
+            <template id="first-item">
+                <img src="" class="carousel-img"/>
+            </template>
+
+            <template id="second-item">
+                <img src="" class="carousel-img"/>
+            </template>
+
+            <template id="third-item">
+                <img src="" class="carousel-img"/>
+            </template>
+
+            <template id="fourth-item">
+                <img src="" class="carousel-img"/>
+            </template>
+
+            <template id="fifth-item">
+                <img src="" class="carousel-img"/>
+            </template>
+
+            <template id="sixth-item">
+                <img src="" class="carousel-img"/>
+            </template>
+
+            <template id="seventh-item">
+                <img src="" class="carousel-img"/>
+            </template>
+
+            <template id="eighth-item">
+                <img src="" class="carousel-img"/>
+            </template>
+
+            <template id="ninth-item">
+                <img src="" class="carousel-img"/>
+            </template>
+
+            <template id="tenth-item">
+                <img src="" class="carousel-img"/>
+            </template>
+            <!-- end Vue templates -->
+
+        </section>
+
+        <div class="main__cintainer">
+
+            <section class="main__block">
+                <h2 class="main-block-caption"></h2>
+                <span class="main-block-text"></span>
+                <img src="" class="main-block-img"/>
+            </section>
+
+            <form class="main-form">
+
+                <h2 class="main-form-caption"></h2>
+
+                <div class="field-wrapper">
+                    <label for="name_field" class="filed-label"></label>
+                    <input type="text" class="field" id="name_field" name="detail-name"
+                           placeholder="Введите название детали"/>
+                </div>
+
+                <div class="field-wrapper">
+                    <label for="number_field" class="filed-label"></label>
+                    <input type="tel" class="field" id="number_field" name="user-number"
+                           placeholder="Введите Ваш номер"/>
+                </div>
+
+                <div class="field-wrapper">
+                    <button type="submit" class="field-btn" name="submit" @click.key="enter" form>Узнать стоимость
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+</div>
+
+<div class="container">
+    <main class="main-wrapper">
+
+        <h2 class="main-caption"></h2>
+
+        <div class="main__container">
+
+            <article class="main__box">
+                <img src="" class="main-box-img"/>
+                <p class="main-box-text"></p>
+            </article>
+
+            <article class="main__box">
+                <img src="" class="main-box-img"/>
+                <p class="main-box-text"></p>
+            </article>
+
+            <article class="main__box">
+                <img src="" class="main-box-img"/>
+                <p class="main-box-text"></p>
+            </article>
+
+            <article class="main__box">
+                <img src="" class="main-box-img"/>
+                <p class="main-box-text"></p>
+            </article>
+
+            <article class="main__box">
+                <img src="" class="main-box-img"/>
+                <p class="main-box-text"></p>
+            </article>
+
+            <article class="main__box">
+                <img src="" class="main-box-img"/>
+                <p class="main-box-text"></p>
+            </article>
+
+        </div>
+
+        <section class="progress__container">
+
+            <img src="" class="progress-car"/>
+
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+            <img src="" class="progress-arrow"/>
+
+            <img src="" class="progress-car"/>
+
+        </section>
+
+        <div class="main__container">
+
+            <h3 class="main-container-caption"></h3>
+
+            <div class="main-container-wrapper">
+
+                <article class="main__box">
+                    <img src="" class="main-box-img"/>
+                    <p class="main-box-text"></p>
+                </article>
+
+                <article class="main__box">
+                    <img src="" class="main-box-img"/>
+                    <p class="main-box-text"></p>
+                </article>
+
+                <article class="main__box">
+                    <img src="" class="main-box-img"/>
+                    <p class="main-box-text"></p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </main>
+</div>
+
+<footer class="container">
+    <main class="footer-wrapper">
+
+        <article class="footer__container">
+            <h2 class="footer-caption"></h2>
+            <h3 class="footer-caption"></h3>
+            <h3 class="footer-caption"></h3>
+            <p class="footer-text"></p>
+        </article>
+
+        <form class="footer-form" action="" method="get">
+
+            <div class="footer__captions">
+                <h2 class="footer-form-caption"></h2>
+                <h4 class="footer-form-caption"></h4>
+            </div>
+
+            <div class="field-wrapper">
+                <input type="text" class="field" name="user-quiz" placeholder="Введите текст вопроса"/>
+            </div>
+
+            <div class="field-wrapper">
+                <input type="tel" class="field" name="user-number" placeholder="Введите Ваш номер"/>
+            </div>
+
+            <div class="field-wrapper">
+                <button type="submit" class="field-btn" name="submit" @click.key="enter" form>Узнать ответ</button>
+            </div>
+
+        </form>
+
+    </main>
+</footer>
 
 </body>
 </html>
