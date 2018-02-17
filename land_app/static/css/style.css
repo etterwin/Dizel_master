@@ -314,7 +314,7 @@ body .container {
       top: 0;
       width: 48px;
       height: 48px;
-      background: url("../assets/pictures/png/section__caption-1.png") no-repeat 50% 50%;
+      background: url("../assets/pictures/svg/gearwheels-couple.svg") no-repeat 50% 50%;
       background-size: cover;
       transform: scale(-1, 1); }
     body .container:nth-child(2) main .main__captions:after {
@@ -324,7 +324,7 @@ body .container {
       top: 0;
       width: 48px;
       height: 48px;
-      background: url("../assets/pictures/png/section__caption-1.png") no-repeat 50% 50%;
+      background: url("../assets/pictures/svg/gearwheels-couple.svg") no-repeat 50% 50%;
       background-size: cover; }
   body .container:nth-child(2) main .main__captions .main-caption:first-child {
     font-family: 'Bender Black', sans-serif;
@@ -347,15 +347,29 @@ body .container {
   body .container:nth-child(3) {
     height: 420px;
     padding: 10px;
-    background: url("../assets/pictures/png/man.png") no-repeat 80% 50%, url("../assets/pictures/png/bg.png") no-repeat 50% 50%;
-    background-size: 1000px 900px, cover; }
+    background: #222222;
+    background: url("../assets/pictures/png/man.png") no-repeat 70% 50%, -moz-linear-gradient(left, #222222 35%, #676868 65%, #222222 90%);
+    background: url("../assets/pictures/png/man.png") no-repeat 70% 50%, -webkit-linear-gradient(left, #222222 35%, #676868 65%, #222222 90%);
+    background: url("../assets/pictures/png/man.png") no-repeat 70% 50%, linear-gradient(to right, #222222 35%, #676868 65%, #222222 90%);
+    background-size: 510px 420px, cover; }
   body .container:nth-child(3) .main-caption {
     cursor: default; }
     body .container:nth-child(3) .main-caption:first-child {
       font-family: 'Bender Black', sans-serif;
       color: white;
       line-height: 1;
-      font-size: 48px; }
+      font-size: 48px;
+      position: relative; }
+      body .container:nth-child(3) .main-caption:first-child:after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 300px;
+        height: 40px;
+        width: 40px;
+        background: url("../assets/pictures/svg/speedometr.svg") no-repeat 50% 50%;
+        background-size: cover;
+        transform: scale(-1, 1); }
     body .container:nth-child(3) .main-caption:nth-child(2) {
       margin: 8px 0 20px;
       font-family: "Proxima Nova Regular", sans-serif;
@@ -490,6 +504,8 @@ body .container {
   width: 100%;
   margin: 0 auto; }
 
+/*end base*/
+/*styles for car options*/
 .car__container {
   position: relative;
   width: 30%;
@@ -582,6 +598,138 @@ body .container {
   font-size: 13pt;
   font-family: 'Proxima Nova Regular', sans-serif; }
 
-/*end base*/
+/*end*/
+/*styles for carousel*/
+.carousel__container {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  height: 590px; }
+
+.carousel__container .carousel__item {
+  position: absolute;
+  opacity: 0.7;
+  transition: all .3s ease-in-out;
+  cursor: pointer; }
+  .carousel__container .carousel__item:hover {
+    opacity: 1; }
+  .carousel__container .carousel__item:first-child {
+    top: 0;
+    left: calc(50% - 50px); }
+  .carousel__container .carousel__item:first-child .carousel-btn__container {
+    margin: 5px auto 0; }
+  .carousel__container .carousel__item:nth-child(2) {
+    top: 100px;
+    right: calc(50% - 300px);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .carousel__container .carousel__item:nth-child(3) {
+    top: 240px;
+    right: calc(50% - 380px);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .carousel__container .carousel__item:nth-child(4) {
+    top: 410px;
+    right: calc(50% - 450px);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .carousel__container .carousel__item:nth-child(5) {
+    top: 510px;
+    right: calc(50% - 250px);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .carousel__container .carousel__item:nth-child(2) .carousel-btn__container, .carousel__container .carousel__item:nth-child(3) .carousel-btn__container, .carousel__container .carousel__item:nth-child(4) .carousel-btn__container, .carousel__container .carousel__item:nth-child(5) .carousel-btn__container {
+    margin-right: 10px; }
+  .carousel__container .carousel__item:nth-child(6) {
+    top: 510px;
+    left: calc(50% - 270px);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .carousel__container .carousel__item:nth-child(7) {
+    top: 410px;
+    left: calc(50% - 405px);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .carousel__container .carousel__item:nth-child(8) {
+    top: 240px;
+    left: calc(50% - 385px);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .carousel__container .carousel__item:nth-child(9) {
+    top: 100px;
+    left: calc(50% - 315px);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .carousel__container .carousel__item:nth-child(6) .carousel-btn__container, .carousel__container .carousel__item:nth-child(7) .carousel-btn__container, .carousel__container .carousel__item:nth-child(8) .carousel-btn__container, .carousel__container .carousel__item:nth-child(9) .carousel-btn__container {
+    margin-left: 10px; }
+  .carousel__container .carousel__item:nth-child(10) {
+    opacity: 1;
+    width: 360px;
+    height: 360px;
+    top: 144px;
+    left: calc(50% - 180px);
+    cursor: default; }
+  .carousel__container .carousel__item:nth-child(10) .carousel-btn__container {
+    width: 360px;
+    height: 360px; }
+  .carousel__container .carousel__item:nth-child(10) .carousel-btn__container .carousel-btn-wrapper {
+    width: 360px;
+    height: 360px; }
+
+.carousel-btn__container {
+  position: relative;
+  width: 70px;
+  height: 70px; }
+
+.carousel-btn-img-wrapper {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.carousel-img-wrapper {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  top: 50px;
+  left: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 3; }
+
+.carousel-img {
+  width: 260px;
+  height: 260px; }
+
+.carousel-btn-img {
+  width: 40px;
+  height: 40px; }
+
+.carousel-btn-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 70px;
+  z-index: 1; }
+
+.carousel-caption {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+  cursor: pointer; }
+
+/*end*/
 
 /*# sourceMappingURL=style.css.map */

@@ -375,21 +375,25 @@
             <!-- Карусель сверстана по часовой стрелке, начиная с самого верхнего элемента -->
 
             <!-- First item -->
-            <div class="carousel__item" @click="switchView('square')">
+            <div class="carousel__item" onclick="carouselChange(this)">
                 <h3 class="carousel-caption">Капитальный
                     <br>ремонт ДВС</h3>
                 <div class="carousel-btn__container">
-                    <img src="" class="carousel-btn-img"/>
-                    <img src="" class="carousel-btn-wrapper"/>
+                    <div class="carousel-btn-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-1.jpg' %}" class="carousel-btn-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
             </div>
             <!-- end first item -->
 
             <!-- Second item -->
-            <div class="carousel__item" @click="switchView('square')">
+            <div class="carousel__item" onclick="carouselChange(this)">
                 <div class="carousel-btn__container">
-                    <img src="" class="carousel-btn-img"/>
-                    <img src="" class="carousel-btn-wrapper"/>
+                    <div class="carousel-btn-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-2.jpg' %}" class="carousel-btn-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
                 <h3 class="carousel-caption">Диагностика
                     <br>двигателя</h3>
@@ -397,20 +401,24 @@
             <!-- end second item -->
 
             <!-- Third item -->
-            <div class="carousel__item" @click="switchView('square')">
+            <div class="carousel__item" onclick="carouselChange(this)">
                 <div class="carousel-btn__container">
-                    <img src="" class="carousel-btn-img"/>
-                    <img src="" class="carousel-btn-wrapper"/>
+                    <div class="carousel-btn-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-3.JPG' %}" class="carousel-btn-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
                 <h3 class="carousel-caption">Чип тюнинг</h3>
             </div>
             <!-- end third item -->
 
             <!-- Fourth item -->
-            <div class="carousel__item" @click="switchView('square')">
+            <div class="carousel__item" onclick="carouselChange(this)">
                 <div class="carousel-btn__container">
-                    <img src="" class="carousel-btn-img"/>
-                    <img src="" class="carousel-btn-wrapper"/>
+                    <div class="carousel-btn-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-4.jpg' %}" class="carousel-btn-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
                 <h3 class="carousel-caption">Диагностика топливной
                     <br>аппаратуры</h3>
@@ -418,10 +426,12 @@
             <!-- end fourth item -->
 
             <!-- Fifth item -->
-            <div class="carousel__item" @click="switchView('square')">
+            <div class="carousel__item" onclick="carouselChange(this)">
                 <div class="carousel-btn__container">
-                    <img src="" class="carousel-btn-img"/>
-                    <img src="" class="carousel-btn-wrapper"/>
+                    <div class="carousel-btn-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-1.jpg' %}" class="carousel-btn-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
                 <h3 class="carousel-caption">Ремонт ходовой
                     <br>подвески</h3>
@@ -429,97 +439,66 @@
             <!-- end fifth item -->
 
             <!-- Sixth item -->
-            <div class="carousel__item" @click="switchView('square')">
+            <div class="carousel__item" onclick="carouselChange(this)">
                 <h3 class="carousel-caption">ТО и замена масла</h3>
                 <div class="carousel-btn__container">
-                    <img src="" class="carousel-btn-img"/>
-                    <img src="" class="carousel-btn-wrapper"/>
+                    <div class="carousel-btn-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-2.jpg' %}" class="carousel-btn-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
             </div>
             <!-- end sixth item -->
 
             <!-- Seventh item -->
-            <div class="carousel__item" @click="switchView('square')">
+            <div class="carousel__item" onclick="carouselChange(this)">
                 <h3 class="carousel-caption">Ремонт тормозной
                     <br>и рулевой системы</h3>
                 <div class="carousel-btn__container">
-                    <img src="" class="carousel-btn-img"/>
-                    <img src="" class="carousel-btn-wrapper"/>
+                    <div class="carousel-btn-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-3.JPG' %}" class="carousel-btn-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
             </div>
             <!-- end seventh item -->
 
             <!-- Eighth item -->
-            <div class="carousel__item" @click="switchView('square')">
+            <div class="carousel__item" onclick="carouselChange(this)">
                 <h3 class="carousel-caption">Ремонт КПП
                     <br>и редуктора</h3>
                 <div class="carousel-btn__container">
-                    <img src="" class="carousel-btn-img"/>
-                    <img src="" class="carousel-btn-wrapper"/>
+                    <div class="carousel-btn-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-4.jpg' %}" class="carousel-btn-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
             </div>
             <!-- end eighth item -->
 
             <!-- Ninth item -->
-            <div class="carousel__item" @click="switchView('square')">
+            <div class="carousel__item" onclick="carouselChange(this)">
                 <h3 class="carousel-caption">Автоэлектрика</h3>
                 <div class="carousel-btn__container">
-                    <img src="" class="carousel-btn-img"/>
-                    <img src="" class="carousel-btn-wrapper"/>
+                    <div class="carousel-btn-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-1.jpg' %}" class="carousel-btn-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
             </div>
             <!-- end ninth item -->
 
             <!-- Main item -->
-            <div class="carousel-item">
-                <transition name="switch">
-                    <component :is="currentVuew"></component>
-                </transition>
+            <div class="carousel__item">
+                <div class="carousel-btn__container">
+                    <div class="carousel-img-wrapper">
+                        <img src="{% static 'assets/pictures/png/photo-1.jpg' %}" class="carousel-img" id="carousel-img"/>
+                    </div>
+                    <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
+                </div>
             </div>
             <!-- end main item -->
 
-
-            <!-- Vue templates -->
-            <template id="first-item">
-                <img src="" class="carousel-img"/>
-            </template>
-
-            <template id="second-item">
-                <img src="" class="carousel-img"/>
-            </template>
-
-            <template id="third-item">
-                <img src="" class="carousel-img"/>
-            </template>
-
-            <template id="fourth-item">
-                <img src="" class="carousel-img"/>
-            </template>
-
-            <template id="fifth-item">
-                <img src="" class="carousel-img"/>
-            </template>
-
-            <template id="sixth-item">
-                <img src="" class="carousel-img"/>
-            </template>
-
-            <template id="seventh-item">
-                <img src="" class="carousel-img"/>
-            </template>
-
-            <template id="eighth-item">
-                <img src="" class="carousel-img"/>
-            </template>
-
-            <template id="ninth-item">
-                <img src="" class="carousel-img"/>
-            </template>
-
-            <template id="tenth-item">
-                <img src="" class="carousel-img"/>
-            </template>
-            <!-- end Vue templates -->
 
         </section>
 
@@ -679,6 +658,9 @@
 
     </main>
 </footer>
+
+<!-- JS -->
+<script src="{% static 'js/main.js' %}"></script>
 
 </body>
 </html>
