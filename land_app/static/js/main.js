@@ -18,7 +18,7 @@ console.log(arrImages.length);
 
 //замена картинки
 function carouselChange() {
-    for(let i = 0; i < arr.length; i++) {
+    for(let i = 0; i < arr.length - 1 ; i++) {
         for(let j = 0; j < arrImages.length; j++) {
             if (i === j) {
                 //изменяем атрибут центральной картинки

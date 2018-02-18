@@ -498,6 +498,150 @@ body .container {
       height: 48px;
       background: url("../assets/pictures/svg/tools.svg") no-repeat 50% 50%;
       background-size: cover; }
+  body .container:nth-child(4) .main__container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end; }
+  body .container:nth-child(4) .main__container .main__block {
+    position: relative; }
+    body .container:nth-child(4) .main__container .main__block:after {
+      content: '';
+      position: absolute;
+      top: 70px;
+      right: -50px;
+      width: 128px;
+      height: 128px;
+      background: url("../assets/pictures/png/arrow-dashed.png") no-repeat 50% 50%;
+      background-size: cover; }
+  body .container:nth-child(4) .main__container .main__block .main-block-caption:first-child {
+    font-family: "Bender Black", sans-serif;
+    font-size: 46px;
+    position: relative; }
+    body .container:nth-child(4) .main__container .main__block .main-block-caption:first-child:after {
+      position: absolute;
+      top: 10px;
+      right: -20px;
+      content: '';
+      width: 40px;
+      height: 30px;
+      background: url("../assets/pictures/png/box.png") no-repeat 50% 50%;
+      background-size: cover; }
+  body .container:nth-child(4) .main__container .main__block .main-block-caption:nth-child(2) {
+    font-family: "Proxima Nova Regular", sans-serif;
+    font-size: 16px; }
+  body .container:nth-child(4) .main__container .main-form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    background: #222222;
+    background: -moz-linear-gradient(top, #222222 0%, #676868 50%, #222222 100%);
+    background: -webkit-linear-gradient(top, #222222 0%, #676868 50%, #222222 100%);
+    background: linear-gradient(to top, #222222 0%, #676868 50%, #222222 100%); }
+    body .container:nth-child(4) .main__container .main-form:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-top: 30px solid white;
+      border-right: 30px solid transparent; }
+    body .container:nth-child(4) .main__container .main-form:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-bottom: 30px solid white;
+      border-left: 30px solid transparent; }
+  body .container:nth-child(4) .main__container .main-form .main-form-caption {
+    color: white;
+    font-family: "Bender Black", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 18px; }
+  body .container:nth-child(4) .main__container .main-form .field-wrapper {
+    width: 290px;
+    height: 60px;
+    margin-bottom: 18px; }
+    body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(2), body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(3) {
+      position: relative; }
+      body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(2):before, body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(3):before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: -5px;
+        left: -40px;
+        width: 370px;
+        height: 80px;
+        background: url("../assets/pictures/svg/shadow.svg") no-repeat 50% 50%;
+        background-size: cover; }
+      body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(2):after, body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(3):after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 290px;
+        height: 60px;
+        background: url("../assets/pictures/svg/input.svg") no-repeat 50% 50%;
+        background-size: cover; }
+    body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(2) .field__container, body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(3) .field__container {
+      position: absolute;
+      width: 290px;
+      height: 60px;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+    body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(2) .field__container .field, body .container:nth-child(4) .main__container .main-form .field-wrapper:nth-child(3) .field__container .field {
+      outline: none;
+      border: none;
+      background: none;
+      font-family: "Proxima Nova Semibold", sans-serif;
+      font-size: 16px;
+      width: 80%; }
+    body .container:nth-child(4) .main__container .main-form .field-wrapper:last-child {
+      position: relative; }
+      body .container:nth-child(4) .main__container .main-form .field-wrapper:last-child:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: -5px;
+        left: -40px;
+        width: 370px;
+        height: 80px;
+        background: url("../assets/pictures/svg/shadow.svg") no-repeat 50% 50%;
+        background-size: cover; }
+      body .container:nth-child(4) .main__container .main-form .field-wrapper:last-child:after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 290px;
+        height: 60px;
+        background: url("../assets/pictures/svg/red.svg") no-repeat 50% 50%;
+        background-size: cover; }
+    body .container:nth-child(4) .main__container .main-form .field-wrapper:last-child .field-btn {
+      position: absolute;
+      width: 290px;
+      height: 60px;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      background: none;
+      color: white;
+      font-family: "Bender Black", sans-serif;
+      font-size: 22pt; }
 
 .main-wrapper {
   max-width: 1125px;

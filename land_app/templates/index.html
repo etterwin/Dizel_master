@@ -499,36 +499,37 @@
             </div>
             <!-- end main item -->
 
-
         </section>
 
-        <div class="main__cintainer">
+        <div class="main__container">
 
             <section class="main__block">
-                <h2 class="main-block-caption"></h2>
-                <span class="main-block-text"></span>
-                <img src="" class="main-block-img"/>
+                <h2 class="main-block-caption">В наличии 10 000 запчастей</h2>
+                <h4 class="main-block-caption">На собственном складе</h4>
+                <img src="{% static 'assets/pictures/png/spares.png' %}" class="main-block-img"/>
             </section>
 
-            <form class="main-form">
+            <form class="main-form" action="" method="get">
 
-                <h2 class="main-form-caption"></h2>
+                <h2 class="main-form-caption">Узнайте стоимость
+                    <br>интересующей детали</h2>
 
                 <div class="field-wrapper">
-                    <label for="name_field" class="filed-label"></label>
-                    <input type="text" class="field" id="name_field" name="detail-name"
-                           placeholder="Введите название детали"/>
+                    <div class="field__container">
+                        <input type="text" class="field" id="name_field" name="detail-name"
+                               placeholder="Введите название детали"/>
+                    </div>
                 </div>
 
                 <div class="field-wrapper">
-                    <label for="number_field" class="filed-label"></label>
-                    <input type="tel" class="field" id="number_field" name="user-number"
-                           placeholder="Введите Ваш номер"/>
+                    <div class="field__container">
+                        <input type="tel" class="field" id="number_field" name="user-number"
+                            placeholder="Введите Ваш номер"/>
+                    </div>
                 </div>
 
                 <div class="field-wrapper">
-                    <button type="submit" class="field-btn" name="submit" @click.key="enter" form>Узнать стоимость
-                    </button>
+                    <button type="submit" class="field-btn" name="submit"  form>Узнать стоимость</button>
                 </div>
 
             </form>
