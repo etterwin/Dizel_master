@@ -22,7 +22,7 @@ function carouselChange() {
         for(let j = 0; j < arrImages.length; j++) {
             if (i === j) {
                 //изменяем атрибут центральной картинки
-                document.getElementById('carousel-img').setAttribute('src', j);
+                document.getElementById('carousel-img').setAttribute('src', arrImages[j]);
             }
             else {
                 return true;

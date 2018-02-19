@@ -590,21 +590,24 @@
 
         <section class="progress__container">
 
-            <img src="" class="progress-car"/>
+            <img src="{% static 'assets/pictures/png/truck.png' %}" class="progress-car"/>
 
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
-            <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+            <div class="arrow-wrapper">
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+                <img src="{% static 'assets/pictures/png/arrow.png' %}" class="progress-arrow"/>
+            </div>
 
-            <img src="" class="progress-car"/>
+            <img src="{% static 'assets/pictures/png/truck.png' %}" class="progress-car"/>
 
         </section>
 
@@ -638,17 +641,21 @@
     </main>
 </div>
 
-<footer class="container">
-    <main class="footer-wrapper">
+<footer class="footer">
 
-        <article class="footer__container">
-            <h2 class="footer-caption"></h2>
-            <h3 class="footer-caption"></h3>
-            <h3 class="footer-caption"></h3>
-            <p class="footer-text"></p>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae36caa7305c30a85e026e2bcd0b46f6fd6f57b2adbdd3bb8e7cdc6adbee46c7e&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
+
+    <article class="footer__container">
+            <h2 class="footer-caption">Контакты</h2>
+            <h3 class="footer-caption">8 910 395 25 55</h3>
+            <h3 class="footer-caption"ООО номер</h3>
+            <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus odio vel
+                fringilla mollis. Nulla facilisi. Fusce id sollicitudin neque. In hac habitasse platea dictumst.
+                Praesent tortor elit, rutrum sit amet nunc id, sodales finibus enim. Fusce blandit pretium dolor, et
+                tempus ex ultrices a. Aliquam eu egestas augue.</p>
         </article>
 
-        <form class="footer-form" action="" method="get">
+    <form class="footer-form" action="" method="get">
 
             <div class="footer__captions">
                 <h2 class="footer-form-caption"></h2>
@@ -669,7 +676,6 @@
 
         </form>
 
-    </main>
 </footer>
 
 <!-- JS -->
