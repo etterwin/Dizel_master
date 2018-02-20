@@ -492,7 +492,8 @@
             <div class="carousel__item">
                 <div class="carousel-btn__container">
                     <div class="carousel-img-wrapper">
-                        <img src="{% static 'assets/pictures/png/photo-1.jpg' %}" class="carousel-img" id="carousel-img"/>
+                        <img src="{% static 'assets/pictures/png/photo-1.jpg' %}" class="carousel-img"
+                             id="carousel-img"/>
                     </div>
                     <img src="{% static 'assets/pictures/png/gear.png' %}" class="carousel-btn-wrapper"/>
                 </div>
@@ -524,12 +525,12 @@
                 <div class="field-wrapper">
                     <div class="field__container">
                         <input type="tel" class="field" id="number_field" name="user-number"
-                            placeholder="Введите Ваш номер"/>
+                               placeholder="Введите Ваш номер"/>
                     </div>
                 </div>
 
                 <div class="field-wrapper">
-                    <button type="submit" class="field-btn" name="submit"  form>Узнать стоимость</button>
+                    <button type="submit" class="field-btn" name="submit" form>Узнать стоимость</button>
                 </div>
 
             </form>
@@ -544,7 +545,7 @@
 
         <div class="flex-wrapper">
             <div class="main__captions">
-                 <h2 class="main-caption">Схема нашей работы</h2>
+                <h2 class="main-caption">Схема нашей работы</h2>
             </div>
         </div>
 
@@ -553,6 +554,7 @@
             <article class="main__box">
                 <img src="{% static 'assets/pictures/png/circle-1.png' %}" class="main-box-img"/>
                 <p class="main-box-text">Ваша заявка</p>
+                <p class="main-box-text">Нажмите</p>
             </article>
 
             <article class="main__box">
@@ -643,38 +645,48 @@
 
 <footer class="footer">
 
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae36caa7305c30a85e026e2bcd0b46f6fd6f57b2adbdd3bb8e7cdc6adbee46c7e&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
+    <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae36caa7305c30a85e026e2bcd0b46f6fd6f57b2adbdd3bb8e7cdc6adbee46c7e&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
 
     <article class="footer__container">
-            <h2 class="footer-caption">Контакты</h2>
-            <h3 class="footer-caption">8 910 395 25 55</h3>
-            <h3 class="footer-caption"ООО номер</h3>
+        <div class="footer-container-wrapper">
+            <h2 class="footer-text">Контакты</h2>
+            <h3 class="footer-text">8 910 395 25 55</h3>
+            <h3 class="footer-text">ООО номер</h3>
             <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus odio vel
                 fringilla mollis. Nulla facilisi. Fusce id sollicitudin neque. In hac habitasse platea dictumst.
                 Praesent tortor elit, rutrum sit amet nunc id, sodales finibus enim. Fusce blandit pretium dolor, et
                 tempus ex ultrices a. Aliquam eu egestas augue.</p>
-        </article>
+        </div>
+    </article>
 
     <form class="footer-form" action="" method="get">
 
-            <div class="footer__captions">
-                <h2 class="footer-form-caption"></h2>
-                <h4 class="footer-form-caption"></h4>
+        <div class="footer__captions">
+            <div class="footer-flex">
+                <h2 class="footer-form-caption">Остались вопросы?</h2>
+                <h4 class="footer-form-caption">Задайте свой вопрос и наш специалист
+                    <br>ответит Вам в ближайшее время</h4>
+            </div>
+        </div>
+
+        <div class="footer-field-wrapper">
+            <input type="text" class="footer-field" name="user-quiz" placeholder="Введите текст вопроса"/>
+        </div>
+
+        <div class="field__box">
+            <div class="footer-field-wrapper">
+                <div class="field__container">
+                    <input type="tel" class="footer-field" name="user-number" placeholder="Введите Ваш номер"/>
+                </div>
             </div>
 
-            <div class="field-wrapper">
-                <input type="text" class="field" name="user-quiz" placeholder="Введите текст вопроса"/>
+            <div class="footer-field-wrapper">
+                <button type="submit" class="footer-field-btn" name="submit" @click.key="enter" form>Узнать ответ</button>
             </div>
+        </div>
 
-            <div class="field-wrapper">
-                <input type="tel" class="field" name="user-number" placeholder="Введите Ваш номер"/>
-            </div>
-
-            <div class="field-wrapper">
-                <button type="submit" class="field-btn" name="submit" @click.key="enter" form>Узнать ответ</button>
-            </div>
-
-        </form>
+    </form>
 
 </footer>
 
