@@ -339,14 +339,14 @@
         </h4>
 
         <form class="form" action="" method="post">
-            {{ form.non_field_errors }}
+            {{ form_1.non_field_errors }}
 
             <div class="field-wrapper">
                 <div class="field__container">
                     <label for="name_field" class="filed-label">
                         <img src="{% static 'assets/pictures/svg/man-user.svg' %}" class="field-icon"/>
                     </label>
-                    {{ form.name }}
+                    {{ form_1.name }}
                     <!--<input type="text" class="field" id="name_field" name="user-name" placeholder="Введите Ваше имя"/>-->
                 </div>
             </div>
@@ -356,13 +356,13 @@
                     <label for="number_field" class="filed-label">
                         <img src="{% static 'assets/pictures/svg/call-answer.svg' %}" class="field-icon"/>
                     </label>
-                    {{ form.phone }}
+                    {{ form_1.phone }}
                     <!--<input type="text" class="field" id="number_field" name="user-number" placeholder="Введите Ваш номер"/>-->
                 </div>
             </div>
 
             <div class="field-wrapper">
-                <button type="submit" class="field-btn" name="submit" form>Записаться</button>
+                <input type="submit" class="field-btn" name="submit" value="Записаться"/>
             </div>
 
         </form>
@@ -520,14 +520,14 @@
             </section>
 
             <form class="main-form" action="" method="post">
-                {{ form.non_field_errors }}
+                {{ form_2.non_field_errors }}
 
                 <h2 class="main-form-caption">Узнайте стоимость
                     <br>интересующей детали</h2>
 
                 <div class="field-wrapper">
                     <div class="field__container">
-                        {{ form.detail }}
+                        {{ form_2.detail }}
                         <!--<input type="text" class="field" id="name_field" name="detail-name"
                                placeholder="Введите название детали"/>-->
                     </div>
@@ -535,14 +535,14 @@
 
                 <div class="field-wrapper">
                     <div class="field__container">
-                        {{ form.phone }}
+                        {{ form_2.phone }}
                         <!--<input type="tel" class="field" id="number_field" name="user-number"
                                placeholder="Введите Ваш номер"/>-->
                     </div>
                 </div>
 
                 <div class="field-wrapper">
-                    <button type="submit" class="field-btn" name="submit" form>Узнать стоимость</button>
+                    <input type="submit" class="field-btn" name="submit" value="Узнать стоимость"/>
                 </div>
 
             </form>
@@ -675,7 +675,7 @@
     </article>
 
     <form class="footer-form" action="" method="post">
-        {{ form.non_field_errors }}
+        {{ form_3.non_field_errors }}
 
         <div class="footer-form-wrapper">
             <span class="footer-triangle"></span>
@@ -690,7 +690,7 @@
 
             <div class="footer-field-wrapper">
                 <div class="field__container">
-                    {{ form.quiz }}
+                    {{ form_3.quiz }}
                     <!--<input type="text" class="footer-field" name="user-quiz" placeholder="Введите текст вопроса"/>-->
                 </div>
             </div>
@@ -698,14 +698,13 @@
             <div class="field__box">
                 <div class="footer-field-wrapper">
                     <div class="field__container">
-                        {{ form.phone }}
+                        {{ form_3.phone }}
                         <!--<input type="tel" class="field" name="user-number" placeholder="Введите Ваш номер"/>-->
                     </div>
                 </div>
 
                 <div class="footer-field-wrapper">
-                    <button type="submit" class="footer-field-btn" name="submit" @click.key="enter" form>Узнать ответ
-                    </button>
+                    <input type="submit" class="footer-field-btn" name="submit" value="Узнать ответ" />
                 </div>
             </div>
 
