@@ -112,10 +112,15 @@ h1, h2, h3, h4 {
       color: white;
       text-align: right;
     }
-    &:last-child p {
+    &:last-child p a {
+      color: white;
       border-bottom: 1px dashed white;
       display: inline-block;
       cursor: pointer;
+      transition: all .3s ease-in-out;
+      &:hover {
+        border-bottom: 1px dashed transparent;
+      }
     }
   }
 }
@@ -229,8 +234,22 @@ h1, h2, h3, h4 {
 
 .header-box-icon {
   width: 22px;
-  max-height: 22px;
+  max-height: 25px;
   margin: auto auto auto 5px;
+}
+
+.header-car {
+  transform: scale(-1,1);
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background: #39474a;
+  }
 }
 
 .header-box-caption {
@@ -1511,14 +1530,14 @@ body .container {
   max-width: 400px;
   width: 100%;
   position: absolute;
-  bottom: 20px;
   left: calc(50% - 562.5px);
+  bottom: 35px;
 }
 
 .footer-container-wrapper {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 5px 20px;
   position: relative;
   background: #222222;
   background: -moz-linear-gradient(top, #222222 0%, #676868 50%, #222222 100%);
@@ -1527,34 +1546,55 @@ body .container {
   &:before {
     content: '';
     position: absolute;
-    top: -14px;
+    top: -15px;
     left: 0;
-    width: 100%;
-    height: 15px;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #222222;
   }
   &:after {
     content: '';
     position: absolute;
+    bottom: -15px;
     right: 0;
-    top: 0;
+    border-top: 15px solid #222222;
+    border-right: 15px solid transparent;
+  }
+}
+
+.footer-container-wrapper .footer-triangle {
+  &:first-child {
+    position: absolute;
+    width: calc(100% - 15px);
+    background: #222222;
+    height: 15px;
+    top: -15px;
+    right: 0;
+  }
+  &:last-child {
+    position: absolute;
+    width: calc(100% - 15px);
+    background: #222222;
+    height: 15px;
+    bottom: -15px;
     left: 0;
   }
 }
 
 .footer-text {
   color: white;
-  &:first-child {
+  cursor: default;
+  &:nth-child(2) {
     font-size: 32px;
     font-family: "Bender Black", sans-serif;
     text-align: center;
   }
-  &:nth-child(2),
-  &:nth-child(3) {
+  &:nth-child(3),
+  &:nth-child(4) {
     font-size: 20px;
     font-family: "Proxima Nova Bold", sans-serif;
     margin-top: 18px;
   }
-  &:last-child {
+  &:nth-child(5) {
     font-size: 18px;
     font-family: "Proxima Nova Regular", sans-serif;
     margin-top: 18px;
@@ -1564,10 +1604,16 @@ body .container {
 
 .footer-form {
   width: 670px;
-  padding: 20px 35px;
   position: absolute;
-  bottom: 20px;
+  bottom: 35px;
   right: calc(50% - 562.5px);
+}
+
+.footer-form-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 5px 35px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1577,6 +1623,41 @@ body .container {
   background: -moz-linear-gradient(top, #222222 0%, #676868 50%, #222222 100%);
   background: -webkit-linear-gradient(top, #222222 0%, #676868 50%, #222222 100%);
   background: linear-gradient(to top, #222222 0%, #676868 50%, #222222 100%);
+  &:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #222222;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    border-top: 15px solid #222222;
+    border-right: 15px solid transparent;
+  }
+}
+
+.footer-form-wrapper .footer-triangle {
+  &:first-child {
+    position: absolute;
+    width: calc(100% - 15px);
+    background: #222222;
+    height: 15px;
+    top: -15px;
+    right: 0;
+  }
+  &:last-child {
+    position: absolute;
+    width: calc(100% - 15px);
+    background: #222222;
+    height: 15px;
+    bottom: -15px;
+    left: 0;
+  }
 }
 
 .footer__captions {
@@ -1621,17 +1702,42 @@ body .container {
   }
   &:nth-child(2) {
     font-family: "Proxima Nova Light", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 .footer-field-wrapper {
   position: relative;
   width: 100%;
+  height: 57px;
+  margin: 30px 0 20px;
+  &:before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 110%;
+    height: 70px;
+    background: url(../assets/pictures/svg/wide-shadow.svg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  &:after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: url(../assets/pictures/svg/last-input_1.svg) no-repeat 50% 50%;
+    background-size: cover;
+  }
 }
 
 .field__box {
   width: 100%;
+  height: 57px;
   display: flex;
   flex-direction: row;
   align-items: center;
