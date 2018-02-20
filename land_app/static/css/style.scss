@@ -432,11 +432,11 @@ body .container {
     height: 415px;
     padding: 10px 10px 5px;
     background: rgb(34, 34, 34);
-    background: url("../assets/pictures/png/man.png") no-repeat 530px 50%,
+    background: url("../assets/pictures/png/man.png") no-repeat 75% 50%,
     -moz-linear-gradient(left, rgba(34, 34, 34, 1) 35%, rgba(103, 104, 104, 1) 65%, rgba(34, 34, 34, 1) 90%);
-    background: url("../assets/pictures/png/man.png") no-repeat 530px 50%,
+    background: url("../assets/pictures/png/man.png") no-repeat 75% 50%,
     -webkit-linear-gradient(left, rgba(34, 34, 34, 1) 35%, rgba(103, 104, 104, 1) 65%, rgba(34, 34, 34, 1) 90%);
-    background: url("../assets/pictures/png/man.png") no-repeat 530px 50%,
+    background: url("../assets/pictures/png/man.png") no-repeat 75% 50%,
     linear-gradient(to right, rgba(34, 34, 34, 1) 35%, rgba(103, 104, 104, 1) 65%, rgba(34, 34, 34, 1) 90%);
     background-size: 540px 420px, cover;
   }
@@ -1527,9 +1527,10 @@ body .container {
   &:before {
     content: '';
     position: absolute;
-    right: 0;
-    bottom: 0;
+    top: -14px;
     left: 0;
+    width: 100%;
+    height: 15px;
   }
   &:after {
     content: '';
