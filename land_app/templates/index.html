@@ -32,6 +32,10 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
 
     <!-- JS lib -->
+    <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
 
 </head>
@@ -334,14 +338,16 @@
             <br>специалиста Поволжья
         </h4>
 
-        <form class="form" action="" method="get">
+        <form class="form" action="" method="post">
+            {{ form.non_field_errors }}
 
             <div class="field-wrapper">
                 <div class="field__container">
                     <label for="name_field" class="filed-label">
                         <img src="{% static 'assets/pictures/svg/man-user.svg' %}" class="field-icon"/>
                     </label>
-                    <input type="text" class="field" id="name_field" name="user-name" placeholder="Введите Ваше имя"/>
+                    {{ form.name }}
+                    <!--<input type="text" class="field" id="name_field" name="user-name" placeholder="Введите Ваше имя"/>-->
                 </div>
             </div>
 
@@ -350,13 +356,13 @@
                     <label for="number_field" class="filed-label">
                         <img src="{% static 'assets/pictures/svg/call-answer.svg' %}" class="field-icon"/>
                     </label>
-                    <input type="tel" class="field" id="number_field" name="user-number"
-                           placeholder="Введите Ваш номер"/>
+                    {{ form.phone }}
+                    <!--<input type="text" class="field" id="number_field" name="user-number" placeholder="Введите Ваш номер"/>-->
                 </div>
             </div>
 
             <div class="field-wrapper">
-                <button type="submit" class="field-btn" name="submit" @click.key="enter" form>Записаться</button>
+                <button type="submit" class="field-btn" name="submit" form>Записаться</button>
             </div>
 
         </form>
@@ -513,22 +519,25 @@
                 <img src="{% static 'assets/pictures/png/spares.png' %}" class="main-block-img"/>
             </section>
 
-            <form class="main-form" action="" method="get">
+            <form class="main-form" action="" method="post">
+                {{ form.non_field_errors }}
 
                 <h2 class="main-form-caption">Узнайте стоимость
                     <br>интересующей детали</h2>
 
                 <div class="field-wrapper">
                     <div class="field__container">
-                        <input type="text" class="field" id="name_field" name="detail-name"
-                               placeholder="Введите название детали"/>
+                        {{ form.detail }}
+                        <!--<input type="text" class="field" id="name_field" name="detail-name"
+                               placeholder="Введите название детали"/>-->
                     </div>
                 </div>
 
                 <div class="field-wrapper">
                     <div class="field__container">
-                        <input type="tel" class="field" id="number_field" name="user-number"
-                               placeholder="Введите Ваш номер"/>
+                        {{ form.phone }}
+                        <!--<input type="tel" class="field" id="number_field" name="user-number"
+                               placeholder="Введите Ваш номер"/>-->
                     </div>
                 </div>
 
@@ -665,7 +674,9 @@
         </div>
     </article>
 
-    <form class="footer-form" action="" method="get">
+    <form class="footer-form" action="" method="post">
+        {{ form.non_field_errors }}
+
         <div class="footer-form-wrapper">
             <span class="footer-triangle"></span>
 
@@ -679,14 +690,16 @@
 
             <div class="footer-field-wrapper">
                 <div class="field__container">
-                    <input type="text" class="footer-field" name="user-quiz" placeholder="Введите текст вопроса"/>
+                    {{ form.quiz }}
+                    <!--<input type="text" class="footer-field" name="user-quiz" placeholder="Введите текст вопроса"/>-->
                 </div>
             </div>
 
             <div class="field__box">
                 <div class="footer-field-wrapper">
                     <div class="field__container">
-                        <input type="tel" class="footer-field" name="user-number" placeholder="Введите Ваш номер"/>
+                        {{ form.phone }}
+                        <!--<input type="tel" class="field" name="user-number" placeholder="Введите Ваш номер"/>-->
                     </div>
                 </div>
 
@@ -705,10 +718,6 @@
 <a id="anchor"></a>
 
 <!-- JS -->
-    <script
-            src="http://code.jquery.com/jquery-3.3.1.slim.js"
-            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-            crossorigin="anonymous"></script>
 <script src="{% static 'js/main.js' %}"></script>
 
 </body>

@@ -1459,6 +1459,14 @@ body .container {
   justify-content: space-around;
   align-items: center; }
 
+.field__box .footer-field-wrapper .field {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: "Proxima Nova Condensed Semibold", sans-serif;
+  font-size: 22px;
+  width: 80%; }
+
 .footer-field {
   outline: none;
   border: none;

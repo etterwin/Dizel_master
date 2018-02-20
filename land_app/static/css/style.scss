@@ -239,7 +239,7 @@ h1, h2, h3, h4 {
 }
 
 .header-car {
-  transform: scale(-1,1);
+  transform: scale(-1, 1);
   position: relative;
   &:after {
     content: '';
@@ -1807,6 +1807,15 @@ body .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.field__box .footer-field-wrapper .field {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: "Proxima Nova Condensed Semibold", sans-serif;
+  font-size: 22px;
+  width: 80%;
 }
 
 .footer-field {
