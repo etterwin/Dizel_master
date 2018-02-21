@@ -38,6 +38,7 @@
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
 
+
 </head>
 <body>
 
@@ -154,7 +155,9 @@
         </div>
 
         <div class="main__container">
+            <!-- Контейнер для машин, второй блок. Мигание фар прописаны через псевдоклассы -->
 
+            <!-- First car -->
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-3.png' %}" class="car-img"/>
                 <h3 class="car-caption">Валдай</h3>
@@ -182,7 +185,9 @@
                     </div>
                 </section>
             </article>
+            <!-- end first car -->
 
+            <!-- Second car -->
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption">Камаз</h3>
@@ -210,7 +215,9 @@
                     </div>
                 </section>
             </article>
+            <!-- end second car -->
 
+            <!-- Third car -->
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption">Mersedes</h3>
@@ -238,7 +245,9 @@
                     </div>
                 </section>
             </article>
+            <!-- end third car -->
 
+            <!-- Fourth car -->
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-2.png' %}" class="car-img"/>
                 <h3 class="car-caption">ГАЗон</h3>
@@ -266,7 +275,9 @@
                     </div>
                 </section>
             </article>
+            <!-- end fourth car -->
 
+            <!-- Fifth car -->
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption">МАЗ</h3>
@@ -294,7 +305,9 @@
                     </div>
                 </section>
             </article>
+            <!-- end fifth car -->
 
+            <!-- Sixth car -->
             <article class="car__container">
                 <img src="{% static 'assets/pictures/png/car-1.png' %}" class="car-img"/>
                 <h3 class="car-caption">Foton</h3>
@@ -322,6 +335,7 @@
                     </div>
                 </section>
             </article>
+            <!-- end sixth car -->
 
         </div>
 
@@ -338,6 +352,7 @@
             <br>специалиста Поволжья
         </h4>
 
+        <!-- Первая форма на странице. Отправляет имя и телефон -->
         <form class="form" action="" method="post">
             {{ form_1.non_field_errors }}
 
@@ -347,7 +362,10 @@
                         <img src="{% static 'assets/pictures/svg/man-user.svg' %}" class="field-icon"/>
                     </label>
                     {{ form_1.name }}
-                    <!--<input type="text" class="field" id="name_field" name="user-name" placeholder="Введите Ваше имя"/>-->
+                    <!--
+                    Если вдруг ты будешь все переделывать, то раскомментируй все инпуты
+                    <input type="text" class="field" id="name_field" name="user-name" placeholder="Введите Ваше имя"/>
+                    -->
                 </div>
             </div>
 
@@ -357,7 +375,10 @@
                         <img src="{% static 'assets/pictures/svg/call-answer.svg' %}" class="field-icon"/>
                     </label>
                     {{ form_1.phone }}
-                    <!--<input type="text" class="field" id="number_field" name="user-number" placeholder="Введите Ваш номер"/>-->
+                    <!--
+                    Если вдруг ты будешь все переделывать, то раскомментируй все инпуты
+                    <input type="text" class="field" id="number_field" name="user-number" placeholder="Введите Ваш номер"/>
+                    -->
                 </div>
             </div>
 
@@ -366,6 +387,7 @@
             </div>
 
         </form>
+        <!-- Конец первой формы -->
 
     </main>
 </div>
@@ -379,9 +401,8 @@
             </div>
         </div>
 
+        <!-- Карусель сверстана по часовой стрелке, начиная с самого верхнего элемента -->
         <section class="carousel__container">
-
-            <!-- Карусель сверстана по часовой стрелке, начиная с самого верхнего элемента -->
 
             <!-- First item -->
             <div class="carousel__item" onclick="carouselChange(this)">
@@ -510,6 +531,7 @@
             <!-- end main item -->
 
         </section>
+        <!-- Конец карусели -->
 
         <div class="main__container">
 
@@ -519,6 +541,7 @@
                 <img src="{% static 'assets/pictures/png/spares.png' %}" class="main-block-img"/>
             </section>
 
+            <!-- Вторая форма на странице. Отправляет наименование детали и телефон -->
             <form class="main-form" action="" method="post">
                 {{ form_2.non_field_errors }}
 
@@ -528,16 +551,20 @@
                 <div class="field-wrapper">
                     <div class="field__container">
                         {{ form_2.detail }}
-                        <!--<input type="text" class="field" id="name_field" name="detail-name"
-                               placeholder="Введите название детали"/>-->
+                        <!--
+                        Если вдруг ты будешь все переделывать, то раскомментируй все инпуты
+                        <input type="text" class="field" id="name_field" name="detail-name" placeholder="Введите название детали"/>
+                        -->
                     </div>
                 </div>
 
                 <div class="field-wrapper">
                     <div class="field__container">
                         {{ form_2.phone }}
-                        <!--<input type="tel" class="field" id="number_field" name="user-number"
-                               placeholder="Введите Ваш номер"/>-->
+                        <!--
+                        Если вдруг ты будешь все переделывать, то раскомментируй все инпуты
+                        <input type="tel" class="field" id="number_field" name="user-number" placeholder="Введите Ваш номер"/>
+                        -->
                     </div>
                 </div>
 
@@ -546,6 +573,7 @@
                 </div>
 
             </form>
+            <!-- Конец второй формы -->
 
         </div>
 
@@ -657,8 +685,10 @@
 
 <footer class="footer">
 
+    <!-- Яндекс Карта. Абсолютное позиционирование -->
     <script type="text/javascript" charset="utf-8" async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae36caa7305c30a85e026e2bcd0b46f6fd6f57b2adbdd3bb8e7cdc6adbee46c7e&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
+    <!-- Конец карты -->
 
     <article class="footer__container">
         <div class="footer-container-wrapper">
@@ -674,6 +704,7 @@
         </div>
     </article>
 
+    <!-- Третья форма на странице. Отправляет вопрос и телефон -->
     <form class="footer-form" action="" method="post">
         {{ form_3.non_field_errors }}
 
@@ -691,7 +722,10 @@
             <div class="footer-field-wrapper">
                 <div class="field__container">
                     {{ form_3.quiz }}
-                    <!--<input type="text" class="footer-field" name="user-quiz" placeholder="Введите текст вопроса"/>-->
+                    <!--
+                    Если вдруг ты будешь все переделывать, то раскомментируй все инпуты
+                    <input type="text" class="footer-field" name="user-quiz" placeholder="Введите текст вопроса"/>
+                    -->
                 </div>
             </div>
 
@@ -699,25 +733,59 @@
                 <div class="footer-field-wrapper">
                     <div class="field__container">
                         {{ form_3.phone }}
-                        <!--<input type="tel" class="field" name="user-number" placeholder="Введите Ваш номер"/>-->
+                        <!--
+                        Если вдруг ты будешь все переделывать, то раскомментируй все инпуты
+                        <input type="tel" class="field" name="user-number" placeholder="Введите Ваш номер"/>
+                        -->
                     </div>
                 </div>
 
                 <div class="footer-field-wrapper">
-                    <input type="submit" class="footer-field-btn" name="submit" value="Узнать ответ" />
+                    <input type="submit" class="footer-field-btn" name="submit" value="Узнать ответ"/>
                 </div>
             </div>
 
             <span class="footer-triangle"></span>
         </div>
     </form>
+    <!-- Конец третьей формы -->
 
 </footer>
 
+<!-- Скролл вниз. Не перемещать -->
 <a id="anchor"></a>
 
-<!-- JS -->
+<!-- Scripts -->
 <script src="{% static 'js/main.js' %}"></script>
+
+<script>
+    //создать массив всех активных элементов карусели
+    let arr = document.querySelectorAll('.carousel__item');
+
+    //массив из картинок для вывода в центральном блоке карусели, всегда 9 штук
+    let arrImages = ["/static/assets/pictures/png/photo-1.jpg",
+        "/static/assets/pictures/png/photo-2.jpg",
+        "/static/assets/pictures/png/photo-3.JPG",
+        "/static/assets/pictures/png/photo-4.jpg",
+        "/static/assets/pictures/png/photo-1.jpg",
+        "/static/assets/pictures/png/photo-2.jpg",
+        "/static/assets/pictures/png/photo-3.JPG",
+        "/static/assets/pictures/png/photo-4.jpg",
+        "/static/assets/pictures/png/photo-1.jpg"];
+
+    //замена картинки
+    function carouselChange() {
+        for (i in arr) {
+            for (j in arrImages) {
+                if (i === j) {
+                    document.getElementById('carousel-img').setAttribute('src', arrImages[j]);
+                    console.log(arrImages[j])
+                }
+            }
+        }
+    }
+
+</script>
 
 </body>
 </html>

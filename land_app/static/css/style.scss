@@ -55,6 +55,10 @@ h1, h2, h3, h4 {
   height: 730px;
   background: url("../assets/pictures/png/header-bg.png") no-repeat 50% 50%;
   background-size: cover;
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    padding: 20px 15px;
+    height: 645px;
+  }
 }
 
 .wrapper {
@@ -105,9 +109,12 @@ h1, h2, h3, h4 {
       font-size: 28px;
       color: white;
       text-align: right;
+      @media screen and (min-width: 768px) and (max-width: 992px){
+      font-size: 26px;
+      }
     }
     &:last-child {
-      font-family: 'Proxima Nova Light', sans-serif;
+      font-family: 'Proxima Nova Regular', sans-serif;
       font-size: 18px;
       color: white;
       text-align: right;
@@ -121,6 +128,20 @@ h1, h2, h3, h4 {
       &:hover {
         border-bottom: 1px dashed transparent;
       }
+      @media screen and (min-width: 768px) and (max-width: 992px){
+        border-bottom: none;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          left: -30px;
+          top: 0;
+          width: 20px;
+          height: 20px;
+          background: url("../assets/pictures/svg/placeholders.svg") no-repeat 50% 50%;
+          background-size: cover;
+        }
+      }
     }
   }
 }
@@ -129,6 +150,9 @@ h1, h2, h3, h4 {
   position: relative;
   width: 100%;
   margin-top: 30px;
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    margin-top: 60px;
+  }
 }
 
 .header-img {
@@ -136,6 +160,9 @@ h1, h2, h3, h4 {
   top: 50px;
   right: 50px;
   width: 430px;
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    width: 310px;
+  }
 }
 
 .header-caption {
@@ -146,6 +173,10 @@ h1, h2, h3, h4 {
     line-height: 0.9;
     letter-spacing: 2.25px;
     margin-bottom: 10px;
+    @media screen and (min-width: 768px) and (max-width: 992px){
+      font-size: 34px;
+      margin-bottom: 0;
+    }
   }
   &:nth-child(2) {
     font-family: 'Proxima Nova Regular', sans-serif;
@@ -153,6 +184,11 @@ h1, h2, h3, h4 {
     font-weight: normal;
     line-height: 1;
     margin: 15px 0;
+    @media screen and (min-width: 768px) and (max-width: 992px){
+      font-size: 14px;
+      margin-top: 10px;
+      line-height: 0.95;
+    }
   }
   &:nth-child(3) {
     font-family: 'Bender Black', sans-serif;
@@ -160,6 +196,9 @@ h1, h2, h3, h4 {
     font-weight: normal;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    @media screen and (max-width: 992px){
+      display: none;
+    }
   }
 }
 
@@ -168,7 +207,7 @@ h1, h2, h3, h4 {
   margin-bottom: 18px;
   position: relative;
   &:first-child {
-    margin-top: 65px;
+    margin-top: 45px;
   }
   &:last-child {
     margin-bottom: 0;
@@ -358,6 +397,9 @@ h1, h2, h3, h4 {
     width: 250px;
     display: block;
     text-align: center;
+    @media screen and (max-width: 992px){
+     display: none;
+    }
   }
   &:last-child .header-btn-text {
     margin: 60px auto 0;
@@ -368,6 +410,9 @@ h1, h2, h3, h4 {
     display: block;
     text-align: center;
     opacity: 0.7;
+    @media screen and (max-width: 992px){
+     display: none;
+    }
   }
 }
 

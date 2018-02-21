@@ -40,6 +40,10 @@ h1, h2, h3, h4 {
   height: 730px;
   background: url("../assets/pictures/png/header-bg.png") no-repeat 50% 50%;
   background-size: cover; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .header {
+      padding: 20px 15px;
+      height: 645px; } }
 
 .wrapper {
   max-width: 1125px;
@@ -79,8 +83,11 @@ h1, h2, h3, h4 {
     font-size: 28px;
     color: white;
     text-align: right; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      .header-list .header-item:last-child .sub-list .sub-item:first-child {
+        font-size: 26px; } }
   .header-list .header-item:last-child .sub-list .sub-item:last-child {
-    font-family: 'Proxima Nova Light', sans-serif;
+    font-family: 'Proxima Nova Regular', sans-serif;
     font-size: 18px;
     color: white;
     text-align: right; }
@@ -92,17 +99,36 @@ h1, h2, h3, h4 {
     transition: all .3s ease-in-out; }
     .header-list .header-item:last-child .sub-list .sub-item:last-child p a:hover {
       border-bottom: 1px dashed transparent; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      .header-list .header-item:last-child .sub-list .sub-item:last-child p a {
+        border-bottom: none;
+        position: relative; }
+        .header-list .header-item:last-child .sub-list .sub-item:last-child p a:before {
+          content: '';
+          position: absolute;
+          left: -30px;
+          top: 0;
+          width: 20px;
+          height: 20px;
+          background: url("../assets/pictures/svg/placeholders.svg") no-repeat 50% 50%;
+          background-size: cover; } }
 
 .header__container {
   position: relative;
   width: 100%;
   margin-top: 30px; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .header__container {
+      margin-top: 60px; } }
 
 .header-img {
   position: absolute;
   top: 50px;
   right: 50px;
   width: 430px; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .header-img {
+      width: 310px; } }
 
 .header-caption {
   color: white; }
@@ -112,25 +138,37 @@ h1, h2, h3, h4 {
     line-height: 0.9;
     letter-spacing: 2.25px;
     margin-bottom: 10px; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      .header-caption:first-child {
+        font-size: 34px;
+        margin-bottom: 0; } }
   .header-caption:nth-child(2) {
     font-family: 'Proxima Nova Regular', sans-serif;
     font-size: 18px;
     font-weight: normal;
     line-height: 1;
     margin: 15px 0; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      .header-caption:nth-child(2) {
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 0.95; } }
   .header-caption:nth-child(3) {
     font-family: 'Bender Black', sans-serif;
     font-size: 22px;
     font-weight: normal;
     letter-spacing: 1px;
     margin-bottom: 10px; }
+    @media screen and (max-width: 992px) {
+      .header-caption:nth-child(3) {
+        display: none; } }
 
 .header-wrapper .header__box {
   width: 240px;
   margin-bottom: 18px;
   position: relative; }
   .header-wrapper .header__box:first-child {
-    margin-top: 65px; }
+    margin-top: 45px; }
   .header-wrapper .header__box:last-child {
     margin-bottom: 0; }
   .header-wrapper .header__box:before {
@@ -292,6 +330,9 @@ h1, h2, h3, h4 {
     width: 250px;
     display: block;
     text-align: center; }
+    @media screen and (max-width: 992px) {
+      .header-btn-wrapper:first-child .header-btn-text {
+        display: none; } }
   .header-btn-wrapper:last-child .header-btn-text {
     margin: 60px auto 0;
     color: white;
@@ -301,6 +342,9 @@ h1, h2, h3, h4 {
     display: block;
     text-align: center;
     opacity: 0.7; }
+    @media screen and (max-width: 992px) {
+      .header-btn-wrapper:last-child .header-btn-text {
+        display: none; } }
 
 .header-btn-icon {
   width: 20px;
