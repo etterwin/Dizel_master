@@ -435,6 +435,11 @@ body .container {
     background: url("../assets/pictures/png/man.png") no-repeat 75% 50%, -webkit-linear-gradient(left, #222222 35%, #676868 65%, #222222 90%);
     background: url("../assets/pictures/png/man.png") no-repeat 75% 50%, linear-gradient(to right, #222222 35%, #676868 65%, #222222 90%);
     background-size: 540px 420px, cover; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(3) {
+        height: 410px;
+        padding: 10px 20px 0;
+        background-position: 450px 50%; } }
   body .container:nth-child(3) .main-caption {
     cursor: default; }
     body .container:nth-child(3) .main-caption:first-child {
@@ -550,6 +555,9 @@ body .container {
       font-size: 22px; }
   body .container:nth-child(4) {
     padding: 35px; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(4) {
+        padding: 30px 15px; } }
   body .container:nth-child(4) .flex-wrapper {
     display: flex;
     flex-direction: row; }
@@ -589,8 +597,18 @@ body .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: end; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(4) .main__container {
+        display: block;
+        position: relative;
+        height: 400px; } }
   body .container:nth-child(4) .main__container .main__block {
     position: relative; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(4) .main__container .main__block {
+        height: 400px;
+        width: 100%;
+        position: relative; } }
     body .container:nth-child(4) .main__container .main__block:after {
       content: '';
       position: absolute;
@@ -600,10 +618,16 @@ body .container {
       height: 128px;
       background: url("../assets/pictures/png/arrow-dashed.png") no-repeat 50% 50%;
       background-size: cover; }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .container:nth-child(4) .main__container .main__block:after {
+          left: 150px; } }
   body .container:nth-child(4) .main__container .main__block .main-block-caption:first-child {
     font-family: "Bender Black", sans-serif;
     font-size: 42px;
     position: relative; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(4) .main__container .main__block .main-block-caption:first-child {
+        font-size: 40px; } }
     body .container:nth-child(4) .main__container .main__block .main-block-caption:first-child:after {
       position: absolute;
       top: 15px;
@@ -613,11 +637,19 @@ body .container {
       height: 22px;
       background: url("../assets/pictures/png/box.png") no-repeat 50% 50%;
       background-size: cover; }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .container:nth-child(4) .main__container .main__block .main-block-caption:first-child:after {
+          right: 55px; } }
   body .container:nth-child(4) .main__container .main__block .main-block-caption:nth-child(2) {
     font-family: "Proxima Nova Regular", sans-serif;
     font-size: 16px;
     opacity: 0.7;
     margin-top: 5px; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    body .container:nth-child(4) .main__container .main__block .main-block-img {
+      position: absolute;
+      left: -45%;
+      bottom: 0; } }
   body .container:nth-child(4) .main__container .main-form {
     width: 350px;
     display: flex;
@@ -629,6 +661,11 @@ body .container {
     background: -moz-linear-gradient(top, #222222 0%, #676868 50%, #222222 100%);
     background: -webkit-linear-gradient(top, #222222 0%, #676868 50%, #222222 100%);
     background: linear-gradient(to top, #222222 0%, #676868 50%, #222222 100%); }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(4) .main__container .main-form {
+        position: absolute;
+        bottom: 0;
+        right: 0; } }
     body .container:nth-child(4) .main__container .main-form:after {
       content: '';
       position: absolute;
@@ -731,8 +768,10 @@ body .container {
   body .container:nth-child(5) {
     box-sizing: border-box;
     padding: 10px;
-    width: 100%;
-    height: 610px; }
+    width: 100%; }
+    @media screen and (min-width: 993px) {
+      body .container:nth-child(5) {
+        height: 610px; } }
   body .container:nth-child(5) .main-wrapper {
     display: flex;
     padding: 30px;
@@ -779,7 +818,14 @@ body .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: start; }
+    align-items: start;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(5) .main-wrapper .main__container:nth-child(2) {
+        justify-content: space-around; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    body .container:nth-child(5) .main-wrapper .main__container:nth-child(2) .main__box {
+      width: 30%; } }
   body .container:nth-child(5) .main-wrapper .main__container:nth-child(2) .main__box:first-child:first-child .main-box-text:nth-child(2) {
     position: relative; }
     body .container:nth-child(5) .main-wrapper .main__container:nth-child(2) .main__box:first-child:first-child .main-box-text:nth-child(2):after {
@@ -1086,80 +1132,159 @@ body .container {
 .carousel__container {
   position: relative;
   width: 100%;
-  padding: 10px 0;
-  height: 590px; }
+  padding: 10px 0; }
+  @media screen and (min-width: 993px) {
+    .carousel__container {
+      height: 590px; } }
 
 .carousel__container .carousel__item {
   position: absolute;
   opacity: 0.7;
   transition: all .3s ease-in-out;
   cursor: pointer; }
+  @media screen and (max-width: 992px) {
+    .carousel__container .carousel__item {
+      position: relative;
+      opacity: 1;
+      margin-bottom: 20px; } }
   .carousel__container .carousel__item:hover {
     opacity: 1; }
-  .carousel__container .carousel__item:first-child {
-    top: 0;
-    left: calc(50% - 63px); }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel__container .carousel__item:first-child {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: flex-end; } }
+  @media screen and (min-width: 993px) {
+    .carousel__container .carousel__item:first-child {
+      top: 0;
+      left: calc(50% - 63px); } }
   .carousel__container .carousel__item:first-child .carousel-btn__container {
     margin: 5px auto 0; }
-  .carousel__container .carousel__item:nth-child(2) {
-    top: 100px;
-    right: calc(50% - 325px);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .carousel__container .carousel__item:nth-child(3) {
-    top: 240px;
-    right: calc(50% - 390px);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .carousel__container .carousel__item:nth-child(4) {
-    top: 410px;
-    right: calc(50% - 480px);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .carousel__container .carousel__item:nth-child(5) {
-    top: 510px;
-    right: calc(50% - 280px);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      .carousel__container .carousel__item:first-child .carousel-btn__container {
+        margin: auto 40px auto 0; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel__container .carousel__item:nth-child(2) {
+      display: flex;
+      align-items: center;
+      flex-direction: row; } }
+  @media screen and (min-width: 993px) {
+    .carousel__container .carousel__item:nth-child(2) {
+      top: 100px;
+      right: calc(50% - 325px);
+      display: flex;
+      flex-direction: row;
+      align-items: center; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel__container .carousel__item:nth-child(3) {
+      display: flex;
+      align-items: center;
+      flex-direction: row; } }
+  @media screen and (min-width: 993px) {
+    .carousel__container .carousel__item:nth-child(3) {
+      top: 240px;
+      right: calc(50% - 390px);
+      display: flex;
+      flex-direction: row;
+      align-items: center; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel__container .carousel__item:nth-child(4) {
+      display: flex;
+      align-items: center;
+      flex-direction: row; } }
+  @media screen and (min-width: 993px) {
+    .carousel__container .carousel__item:nth-child(4) {
+      top: 410px;
+      right: calc(50% - 480px);
+      display: flex;
+      flex-direction: row;
+      align-items: center; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel__container .carousel__item:nth-child(5) {
+      display: flex;
+      align-items: center;
+      flex-direction: row; } }
+  @media screen and (min-width: 993px) {
+    .carousel__container .carousel__item:nth-child(5) {
+      top: 510px;
+      right: calc(50% - 280px);
+      display: flex;
+      flex-direction: row;
+      align-items: center; } }
   .carousel__container .carousel__item:nth-child(2) .carousel-btn__container, .carousel__container .carousel__item:nth-child(3) .carousel-btn__container, .carousel__container .carousel__item:nth-child(4) .carousel-btn__container, .carousel__container .carousel__item:nth-child(5) .carousel-btn__container {
     margin-right: 10px; }
-  .carousel__container .carousel__item:nth-child(6) {
-    top: 510px;
-    left: calc(50% - 305px);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .carousel__container .carousel__item:nth-child(7) {
-    top: 410px;
-    left: calc(50% - 435px);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .carousel__container .carousel__item:nth-child(8) {
-    top: 240px;
-    left: calc(50% - 405px);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .carousel__container .carousel__item:nth-child(9) {
-    top: 100px;
-    left: calc(50% - 340px);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      .carousel__container .carousel__item:nth-child(2) .carousel-btn__container, .carousel__container .carousel__item:nth-child(3) .carousel-btn__container, .carousel__container .carousel__item:nth-child(4) .carousel-btn__container, .carousel__container .carousel__item:nth-child(5) .carousel-btn__container {
+        margin-right: 40px; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel__container .carousel__item:nth-child(6) {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-end; } }
+  @media screen and (min-width: 993px) {
+    .carousel__container .carousel__item:nth-child(6) {
+      top: 510px;
+      left: calc(50% - 305px);
+      display: flex;
+      flex-direction: row;
+      align-items: center; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel__container .carousel__item:nth-child(7) {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-end; } }
+  @media screen and (min-width: 993px) {
+    .carousel__container .carousel__item:nth-child(7) {
+      top: 410px;
+      left: calc(50% - 435px);
+      display: flex;
+      flex-direction: row;
+      align-items: center; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel__container .carousel__item:nth-child(8) {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-end; } }
+  @media screen and (min-width: 993px) {
+    .carousel__container .carousel__item:nth-child(8) {
+      top: 240px;
+      left: calc(50% - 405px);
+      display: flex;
+      flex-direction: row;
+      align-items: center; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel__container .carousel__item:nth-child(9) {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-end; } }
+  @media screen and (min-width: 993px) {
+    .carousel__container .carousel__item:nth-child(9) {
+      top: 100px;
+      left: calc(50% - 340px);
+      display: flex;
+      flex-direction: row;
+      align-items: center; } }
   .carousel__container .carousel__item:nth-child(6) .carousel-btn__container, .carousel__container .carousel__item:nth-child(7) .carousel-btn__container, .carousel__container .carousel__item:nth-child(8) .carousel-btn__container, .carousel__container .carousel__item:nth-child(9) .carousel-btn__container {
     margin-left: 10px; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      .carousel__container .carousel__item:nth-child(6) .carousel-btn__container, .carousel__container .carousel__item:nth-child(7) .carousel-btn__container, .carousel__container .carousel__item:nth-child(8) .carousel-btn__container, .carousel__container .carousel__item:nth-child(9) .carousel-btn__container {
+        margin: auto 40px auto 0; } }
   .carousel__container .carousel__item:nth-child(10) {
-    opacity: 1;
-    width: 360px;
-    height: 360px;
-    top: 144px;
-    left: calc(50% - 180px);
-    cursor: default; }
+    display: none; }
+    @media screen and (min-width: 993px) {
+      .carousel__container .carousel__item:nth-child(10) {
+        display: block;
+        opacity: 1;
+        width: 360px;
+        height: 360px;
+        top: 144px;
+        left: calc(50% - 180px);
+        cursor: default; } }
   .carousel__container .carousel__item:nth-child(10) .carousel-btn__container {
     width: 360px;
     height: 360px; }
@@ -1171,6 +1296,10 @@ body .container {
   position: relative;
   width: 70px;
   height: 70px; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel-btn__container {
+      width: 90px;
+      height: 90px; } }
 
 .carousel-btn-img-wrapper {
   position: absolute;
@@ -1181,6 +1310,10 @@ body .container {
   z-index: 2;
   border-radius: 50%;
   overflow: hidden; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel-btn-img-wrapper {
+      width: 60px;
+      height: 60px; } }
 
 .carousel-img-wrapper {
   position: absolute;
@@ -1199,6 +1332,10 @@ body .container {
 .carousel-btn-img {
   width: 40px;
   height: 40px; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel-btn-img {
+      width: 60px;
+      height: 60px; } }
 
 .carousel-btn-wrapper {
   position: absolute;
@@ -1207,12 +1344,40 @@ body .container {
   height: 70px;
   width: 70px;
   z-index: 1; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel-btn-wrapper {
+      width: 90px;
+      height: 90px; } }
 
 .carousel-caption {
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 20px;
   cursor: pointer;
   letter-spacing: normal; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel-caption {
+      font-size: 28px;
+      font-family: "Proxima Nova Bold", sans-serif; } }
+
+@media screen and (min-width: 993px) {
+  .carousel__item:first-child .carousel-caption {
+    width: 126px; }
+  .carousel__item:nth-child(2) .carousel-caption {
+    width: 122.2px; }
+  .carousel__item:nth-child(3) .carousel-caption {
+    width: 105px; }
+  .carousel__item:nth-child(4) .carousel-caption {
+    width: 224.6px; }
+  .carousel__item:nth-child(5) .carousel-caption {
+    width: 153.1px; }
+  .carousel__item:nth-child(6) .carousel-caption {
+    width: 174.1px; }
+  .carousel__item:nth-child(7) .carousel-caption {
+    width: 175.7px; }
+  .carousel__item:nth-child(8) .carousel-caption {
+    width: 117px; }
+  .carousel__item:nth-child(9) .carousel-caption {
+    width: 137.6px; } }
 
 /*end*/
 /*styles for progress section*/
@@ -1223,6 +1388,9 @@ body .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 992px) {
+    .progress__container {
+      display: none; } }
 
 .progress-car:first-child {
   position: relative;
@@ -1284,6 +1452,9 @@ body .container {
   width: 100%;
   height: 550px;
   position: relative; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .footer {
+      height: auto; } }
 
 .footer-wrapper {
   margin: 0 auto;
@@ -1297,8 +1468,14 @@ body .container {
   max-width: 400px;
   width: 100%;
   position: absolute;
-  left: calc(50% - 562.5px);
-  bottom: 35px; }
+  left: calc(50% - 562.5px); }
+  @media screen and (min-width: 993px) {
+    .footer__container {
+      bottom: 35px; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .footer__container {
+      top: 35px;
+      left: 20px; } }
 
 .footer-container-wrapper {
   width: 100%;
@@ -1361,6 +1538,9 @@ body .container {
   position: absolute;
   bottom: 35px;
   right: calc(50% - 562.5px); }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .footer-form {
+      right: calc(50% - 335px); } }
 
 .footer-form-wrapper {
   width: 100%;
