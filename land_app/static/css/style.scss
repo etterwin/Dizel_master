@@ -437,6 +437,9 @@ body .container {
   }
   &:nth-child(2) {
     padding: 30px;
+    @media screen and (min-width: 768px) and (max-width: 992px){
+      padding: 20px 15px;
+    }
   }
   &:nth-child(2) main .flex-wrapper {
     display: flex;
@@ -454,6 +457,9 @@ body .container {
       height: 40px;
       background: url("../assets/pictures/svg/gearwheels-couple.svg") no-repeat 50% 50%;
       background-size: cover;
+      @media screen and (min-width: 768px) and (max-width: 992px){
+        left: -55px;
+      }
     }
     &:after {
       content: '';
@@ -465,6 +471,9 @@ body .container {
       background: url("../assets/pictures/svg/gearwheels-couple.svg") no-repeat 50% 50%;
       background-size: cover;
       transform: scale(-1, 1);
+      @media screen and (min-width: 768px) and (max-width: 992px){
+        right: -55px;
+      }
     }
   }
   &:nth-child(2) main .main__captions .main-caption {
@@ -476,6 +485,9 @@ body .container {
       color: #252525;
       text-align: center;
       margin-bottom: 10px;
+      @media screen and (min-width: 768px) and (max-width: 992px){
+        font-size: 36px;
+      }
     }
     &:last-child {
       color: #252525;
@@ -483,6 +495,9 @@ body .container {
       font-size: 16px;
       opacity: 0.8;
       text-align: center;
+      @media screen and (min-width: 768px) and (max-width: 992px){
+        font-size: 14px;
+      }
     }
   }
   &:nth-child(2) main .main__container {
@@ -491,6 +506,10 @@ body .container {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (min-width: 768px) and (max-width: 992px){
+      margin-top: 30px;
+      justify-content: space-around;
+    }
   }
   &:nth-child(3) {
     height: 415px;
@@ -1004,6 +1023,9 @@ body .container {
   &:hover .car__block {
     right: -30%;
     opacity: 1;
+    @media screen and (min-width: 768px) and (max-width: 992px){
+      right: -10%;
+    }
   }
   &:hover .car-caption {
     opacity: 0.7;
@@ -1188,12 +1210,18 @@ body .container {
       }
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 992px){
+      width: 300px;
+  }
 }
 
 .car-img {
   display: block;
   margin: 0 auto;
   position: relative;
+  @media screen and (min-width: 768px) and (max-width: 992px){
+  margin-right: 0;
+  }
 }
 
 .car-caption {
@@ -1214,6 +1242,9 @@ body .container {
   top: 0;
   z-index: 2;
   transition: all .3s ease-in-out;
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    right: -10%;
+  }
 }
 
 .car-wrapper {

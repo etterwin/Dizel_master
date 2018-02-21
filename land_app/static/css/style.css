@@ -363,6 +363,9 @@ body .container {
     background-size: cover; }
   body .container:nth-child(2) {
     padding: 30px; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(2) {
+        padding: 20px 15px; } }
   body .container:nth-child(2) main .flex-wrapper {
     display: flex; }
   body .container:nth-child(2) main .main__captions {
@@ -378,6 +381,9 @@ body .container {
       height: 40px;
       background: url("../assets/pictures/svg/gearwheels-couple.svg") no-repeat 50% 50%;
       background-size: cover; }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .container:nth-child(2) main .main__captions:before {
+          left: -55px; } }
     body .container:nth-child(2) main .main__captions:after {
       content: '';
       position: absolute;
@@ -388,6 +394,9 @@ body .container {
       background: url("../assets/pictures/svg/gearwheels-couple.svg") no-repeat 50% 50%;
       background-size: cover;
       transform: scale(-1, 1); }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .container:nth-child(2) main .main__captions:after {
+          right: -55px; } }
   body .container:nth-child(2) main .main__captions .main-caption:first-child {
     font-family: 'Bender Black', sans-serif;
     font-size: 40px;
@@ -396,18 +405,28 @@ body .container {
     color: #252525;
     text-align: center;
     margin-bottom: 10px; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(2) main .main__captions .main-caption:first-child {
+        font-size: 36px; } }
   body .container:nth-child(2) main .main__captions .main-caption:last-child {
     color: #252525;
     font-family: 'Proxima Nova Light', sans-serif;
     font-size: 16px;
     opacity: 0.8;
     text-align: center; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(2) main .main__captions .main-caption:last-child {
+        font-size: 14px; } }
   body .container:nth-child(2) main .main__container {
     margin-top: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      body .container:nth-child(2) main .main__container {
+        margin-top: 30px;
+        justify-content: space-around; } }
   body .container:nth-child(3) {
     height: 415px;
     padding: 10px 10px 5px;
@@ -830,6 +849,9 @@ body .container {
   .car__container:hover .car__block {
     right: -30%;
     opacity: 1; }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      .car__container:hover .car__block {
+        right: -10%; } }
   .car__container:hover .car-caption {
     opacity: 0.7; }
   .car__container:first-child:before {
@@ -964,11 +986,17 @@ body .container {
     z-index: 1; }
   .car__container:nth-child(6):hover:before, .car__container:nth-child(6):hover:after {
     background-size: cover; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .car__container {
+      width: 300px; } }
 
 .car-img {
   display: block;
   margin: 0 auto;
   position: relative; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .car-img {
+      margin-right: 0; } }
 
 .car-caption {
   text-align: center;
@@ -987,6 +1015,9 @@ body .container {
   top: 0;
   z-index: 2;
   transition: all .3s ease-in-out; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .car__block {
+      right: -10%; } }
 
 .car-wrapper {
   margin-bottom: 8px;
